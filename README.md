@@ -1,8 +1,7 @@
 # Reset HWID - SPOOFER 
 
 
-### Join Discord : https://discord.gg/JUyNjXCG5d
-
+### Join Discord : https://discord.gg/hjnuP6Ksct
 
 > ##### This program is a free program. can be published for free But not allowed to sell or anything, this program is virus free and safe. I confirm that
 
