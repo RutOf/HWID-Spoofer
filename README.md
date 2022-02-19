@@ -1,7 +1,7 @@
 # Reset HWID - SPOOFER 
 
 
-## [Discord New Server Link](https://discord.gg/4xVkxj4cv4)
+### [Discord.gg/Sarnax](https://discord.com/invite/sarnax)
 
 > ##### This program is a free program. can be published for free But not allowed to sell or anything, this program is virus free and safe. I confirm that
 
