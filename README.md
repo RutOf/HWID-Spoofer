@@ -1,9 +1,23 @@
 # Reset HWID - SPOOFER 
 
 
-### FOR SUPPORT : [Discord.gg/Sarnax](https://discord.com/invite/sarnax) 
+***
 
-> ##### This program is a free program. can be published for free But not allowed to sell or anything, this program is virus free and safe. I confirm that
+  <p align="center">
+    <a href="https://discord.gg/7Z6BDGmFRc">
+        <img title="Sarnax discord" alt="SarnaxLii's discord" src="https://discord.c99.nl/widget/theme-3/943374631644045363.png"/>
+    </a>
+</p>
+
+
+#### 💬 JOIN DISCORD : [Sarnax](https://discord.com/users/943374631644045363) ( You must add me as a friend. I will send you a link to the server. )
+> - DM for buy Cheating Private & Source
+> - come in to be the same society as us
+
+
+***
+
+##### This program is a free program. can be published for free But not allowed to sell or anything, this program is virus free and safe. I confirm that
 
 ### How does this program help?
 - ##### Reset IP 
