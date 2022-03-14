@@ -1,5 +1,6 @@
-# Reset HWID - SPOOFER 
+# HWID SPOOFER
 
+It may or may not depend on your destiny and luck. Because this is an old version and this is free, it may have been detected. After using the program, Restart PC and do not enter the game. If you encounter problems, contact Discord.
 
 ***
 
@@ -58,9 +59,3 @@ Cleaner 0.2       |       Others
 ```
 ![cccccccccccccccc](https://user-images.githubusercontent.com/85826349/125170871-511eea00-e1db-11eb-93d6-8c6b514a1d62.png)
 
-
-***
-
-#### After you've done all that, you can turn off Rounter Internet for 1 minute and then turn it on again, you don't have to panic if the internet doesn't work, just restart #### our PC to make the internet work again  , I got banned from MTA and now I can play normally. Thanks.
-
-***
