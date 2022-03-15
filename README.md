@@ -12,7 +12,7 @@ It may or may not depend on your destiny and luck. Because this is an old versio
 
 
 #### 💬 Discord For Support & Buy Cheating Private: [SARNAX SERVER](https://discord.com/users/943374631644045363) // (Add Friend For Invite Discord)
-> - Help with any problems you encounter.
+> - Contact Cheating Private / Source DM 
 > - We do not expect profit We hope you only get good things.
 
 
