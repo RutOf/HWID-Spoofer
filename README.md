@@ -11,7 +11,7 @@ It may or may not depend on your destiny and luck. Because this is an old versio
 </p>
 
 
-### 💬 Join Discord : [HEX SUPPORT](https://discord.gg/Y7g5Bh75ga)
+### 💬 JOIN DISCORD : [HEX SUPPORT](https://discord.gg/Q4Y6u662Fm)
 > - Dm for Create Cheating Private ( Cannot detect because it is constantly being updated )
 > - We do not expect profit We hope you only get good things.
 
