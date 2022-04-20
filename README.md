@@ -27,11 +27,11 @@ It may or may not depend on your destiny and luck. Because this is an old versio
 ##### This program is a free program. can be published for free But not allowed to sell or anything, this program is virus free and safe. I confirm that
 
 ### How does this program help?
-- ##### Reset IP 
-- ##### Reset Mac Address
-- ##### Reset Serial Number Hardisk
-- ##### Clear Temp File & and files that are deepest in Folder (does not affect PC )
-- ##### Eliminate rubbish, residue from Cheating Program & residual ban
+* `  Reset IP`
+* `  Reset Mac Address`
+* `  Reset Serial Number Hardisk`
+* `  Clear Temp File & and files that are deepest in Folder (does not affect PC )`
+* `  Eliminate rubbish, residue from Cheating Program & residual ban`
 
 ***
 
