@@ -21,7 +21,9 @@ It may or may not depend on your destiny and luck. Because this is an old versio
 * ` UPDATE LIFETIME & SUPPORT 24 HR `
 
 🤓・To order, please add a friend to request an invitation to the Discord server.
-
+ ```sh-session
+If you can't join the server please add me to invite discord server : Sarnax#7522
+```          
 ***
 
 ##### This program is a free program. can be published for free But not allowed to sell or anything, this program is virus free and safe. I confirm that
