@@ -15,7 +15,7 @@ It may or may not depend on your destiny and luck. Because this is an old versio
     </a>
 </p>
 
-### 📌・  JOIN DISCORD / BUY PRIVATE : [HEX COMMUNITY](https://discord.gg/S2NxQRvsvn) 
+### 📌・  JOIN DISCORD / BUY  : [HEX COMMUNITY](https://discord.gg/S2NxQRvsvn) 
 
 * `👋 SELL CHEATING PRIVATE / SPOOFER / SOURCE CODE / ETC `
 * ` UPDATE FREE LIFETIME & UD `
