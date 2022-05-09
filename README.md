@@ -1,7 +1,8 @@
 # HWID SPOOFER
 
-It may or may not depend on your destiny and luck. Because this is an old version and this is free, it may have been detected. After using the program, Restart PC and do not enter the game. If you encounter problems, contact Discord.
-
+```sh-session
+CHANGE MAC ADDRESS / HARDWARE ID / IP / SERIAL NUMBER / NETWORK 
+```
 ***
   <p align="center">
     <a href="https://discord.com/users/943374631644045363">
