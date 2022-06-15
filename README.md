@@ -16,7 +16,7 @@ CHANGE MAC ADDRESS / HARDWARE ID / IP / SERIAL NUMBER / NETWORK
     </a>
 </p>
 
-### 📌・ DISCORD : [HEX PROJECT](https://discord.com/users/943374631644045363)
+### 📌・ DISCORD : [HEX PROJECT](https://discord.gg/fYnQePhkt7) / DM FOR BUY
 #### ・ Now we make the server private. when you buy our products you will be invited / We do this to prevent the server from being deleted.
 
 * `👋 SELL CHEATING PRIVATE / SPOOFER / SOURCE CODE / ETC `
