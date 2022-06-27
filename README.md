@@ -70,3 +70,5 @@ Cleaner 0.2       |       Others
 ```
 ![cccccccccccccccc](https://user-images.githubusercontent.com/85826349/125170871-511eea00-e1db-11eb-93d6-8c6b514a1d62.png)
 
+
+<h2 align="center"> Copyright © 2021 - 2022
