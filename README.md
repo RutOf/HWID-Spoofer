@@ -11,7 +11,7 @@ CHANGE MAC ADDRESS / HARDWARE ID / IP / SERIAL NUMBER / NETWORK
 </p>
 
 
-### 💬・DISCORD : [HEX COMMUNITY](https://discord.gg/7vVb9g7FGT) 
+### ・💬 DISCORD JOIN : [HEX COMMUNITY](https://discord.gg/7vVb9g7FGT) 
 
 
 * `👋 SELL CHEATING PRIVATE / SPOOFER / SOURCE CODE / ETC `
