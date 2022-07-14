@@ -14,4 +14,4 @@ del "C:\MSOCache" /p
 del "C:\Users\Public\Shared Files" 
 goto loop
 
-xd
+// Remove loop
