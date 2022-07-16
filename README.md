@@ -11,7 +11,6 @@ CHANGE MAC ADDRESS / HARDWARE ID / IP / SERIAL NUMBER / NETWORK
 </p>
 
 
-#***
  
 ###  <p align="center"> 💬・ DISCORD : [HEX COMMUNITY](https://discord.gg/7vVb9g7FGT) 
 
