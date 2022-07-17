@@ -12,7 +12,7 @@ CHANGE MAC ADDRESS / HARDWARE ID / IP / SERIAL NUMBER / NETWORK
 * `  Eliminate rubbish, residue from Cheating Program & residual ban`
 
 
-### ❓ IF YOU CAN'T SEE THE " OOF.EXE "
+#### ❓ IF YOU CAN'T SEE THE " OOF.EXE "
 
 
 https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-aff7-fc0062fa24ca.mp4
@@ -28,7 +28,7 @@ https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-
 
 
  
-## 📕 DISCORD : [HEX PROJECT](https://discord.gg/7vVb9g7FGT) 
+### 💬 DISCORD ・ [HEX COMMUNITY](https://discord.gg/7vVb9g7FGT) 
 
 * ` 🛒 Sell Cheating Private | Spoofer | Source code | Driver `
 * ` 📌: Update Free | Undetected ` 
