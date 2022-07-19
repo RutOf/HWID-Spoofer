@@ -28,7 +28,6 @@ https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-
 
 
  
-***
  
 ### 💬 DISCORD ・ [HEX PROJECT](https://discord.gg/MBTkVcJefp) 
 
