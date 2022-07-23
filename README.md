@@ -4,7 +4,7 @@
 CHANGE MAC ADDRESS / HARDWARE ID / IP / SERIAL NUMBER / NETWORK 
 ```
 
-### How does this program help?
+### How does this program HELP 
 * `  Reset IP`
 * `  Reset Mac Address`
 * `  Reset Serial Number Hardisk`
