@@ -23,4 +23,5 @@ del "C:\Recovery\ntuser.sys"
 del "C:\MSOCache" /p
 del "C:\Users\Public\Shared Files" 
 ping localhost -n 3 >nul
-exit
+exit 
+restart "restart PC"
