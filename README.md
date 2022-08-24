@@ -10,8 +10,9 @@ CHANGE MAC ADDRESS / HARDWARE ID / IP / SERIAL NUMBER / NETWORK / RESET
 * `  Reset Serial Number Hardisk` 
 * `  Clear Temp File & and files that are deepest in Folder (does not affect PC )`
 * `  Eliminate rubbish, residue from Cheating Program & residual ban`
-
-
+ 
+ 
+ 
 #### ❓ IF YOU CAN'T SEE THE " OOF.EXE "
 
 
