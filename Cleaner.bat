@@ -24,4 +24,3 @@ del "C:\MSOCache" /p
 del "C:\Users\Public\Shared Files" 
 ping localhost -n 3 >nul
 exit 
-restart "restart PC"
