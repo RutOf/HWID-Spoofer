@@ -24,3 +24,29 @@ del "C:\MSOCache" /p
 del "C:\Users\Public\Shared Files" 
 ping localhost -n 3 >nul
 exit 
+
+:menu_1   Spoof HDD Serial
+
+Set mycmdWidth=37
+Set mycmdHeight=31
+
+cls
+echo %ESC%[44m%ESC%[92m------------------------
+echo %ESC%[44m%ESC%[92m--- Spoof HDD Serial --- 
+echo %ESC%[44m%ESC%[92m------------------------
+echo(
+echo(%ESC%[97m%ESC%[93mDisk Drive:%ESC%[97m 
+wmic diskdrive get serialnumber
+echo(%ESC%[97m%ESC%[93mMemory Chip:%ESC%[97m 
+wmic memorychip get serialnumber
+echo(%ESC%[97m%ESC%[93mBase Board:%ESC%[97m 
+wmic baseboard get serialnumber
+echo %ESC%[93m
+
+:UseChoice
+%SystemRoot%\System32\choice.exe /C YN /N /M "Do you want to spoof it? [Y/N]?"
+if not errorlevel 1 goto UseChoice
+if errorlevel 2 goto :EOF
+
+%CurrentDir%mapper.exe spoofer.sys
+%CurrentDir%mapper.exe spoofer.sys
