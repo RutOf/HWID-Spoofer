@@ -57,6 +57,24 @@ DevManView.exe /uninstall "ACPI\*" /use_wildcard
 DevManView.exe /uninstall "Remote*" /use_wildcard
 DevManView.exe /uninstall "Standard*" /use_wildcard
 
+reg delete "HKLM\SYSTEM\ControlSet001\Services\EpicOnlineServices" /f
+reg delete "HKCU\SOFTWARE\Epic Games" /f
+reg delete "HKLM\SOFTWARE\Classes\com.epicgames.launcher" /f
+reg delete "HKLM\SYSTEM\ControlSet001\Services\BEService" /f
+reg delete "HKLM\SYSTEM\ControlSet001\Services\BEDaisy" /f
+reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEDaisy" /f
+reg delete "HKLM\SYSTEM\ControlSet001\Services\EasyAntiCheat" /f
+reg delete "HKLM\SYSTEM\CurrentControlSet\Services\EasyAntiCheat" /f
+reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /f
+reg delete "HKLM\SOFTWARE\WOW6432Node\EasyAntiCheat" /f
+reg delete "HKLM\SOFTWARE\WOW6432Node\Epic Games" /f
+reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\NonPackaged" /f
+reg delete "HKLM\SOFTWARE\Microsoft\RADAR\HeapLeakDetection\DiagnosedApplications" /f
+reg delete "HKCU\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\com.epicgames.launcher" /f
+reg delete "HKCR\com.epicgames.eos" /f
+reg delete "HKLM\SOFTWARE\Microsoft\RADAR\HeapLeakDetection\DiagnosedApplications" /f
+reg delete "HKEY_USERS\S-1-5-18\Software\Epic Games" /f
+
 echo wait....
 PING localhost -n 15 >NUL
 
