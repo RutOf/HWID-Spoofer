@@ -8,6 +8,10 @@ taskkill /f /im BEService_x64.exe
 taskkill /f /im EpicGamesLauncher.exe
 taskkill /f /im FortniteClient-Win64-Shipping_BE.exe
 taskkill /f /im FortniteClient-Win64-Shipping_EAC.exe
+
+netsh advfirewall reset
+
+
 sc stop BEService
 sc stop EasyAntiCheat
 :internettest
