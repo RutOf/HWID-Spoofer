@@ -4,7 +4,7 @@
 ![Windows](https://img.shields.io/badge/-Winodows-28C2FF?style=for-the-badge&logo=windows&logoColor=blue)
 
 
-## ✋ FREE 
+## ✋ READ HERE ! 
 - This is the free version I've tested and it works. When I'm Banned HWID (Some Games)
 - If it doesn't work, don't blame me.
 - Turn off your antivirus and use it.
