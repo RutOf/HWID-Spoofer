@@ -9,9 +9,6 @@ taskkill /f /im EpicGamesLauncher.exe
 taskkill /f /im FortniteClient-Win64-Shipping_BE.exe
 taskkill /f /im FortniteClient-Win64-Shipping_EAC.exe
 
-netsh advfirewall reset
-
-
 sc stop BEService
 sc stop EasyAntiCheat
 :internettest
@@ -28,4 +25,4 @@ set target=www.google.com
 ping %target% -n 1 | find "Reply" > nul
 if errorlevel==1 goto internettest
 cls
-
+exit
