@@ -18,31 +18,6 @@
 * `  Clear Temp File & and files that are deepest in Folder (does not affect PC )`
 * `  Eliminate rubbish, residue from Cheating Program & residual ban`
  
----
- 
-  <p align="center">
-    <a href="https://discord.com/users/943374631644045363">
-        <img title="Fnoberz server discord" alt="Fnoberz's discord" src="https://discord.c99.nl/widget/theme-4/943374631644045363.png"/>
-    </a>
-</p> 
- 
-### 💬 DISCORD  [Clound Official](https://discord.gg/MBTkVcJefp) 
-
-### 📗 Private Project 
-` 🟢 SOURCE CODE , PRIVATE CHEAT , SPOOFER , OTHER JOIN DISCORD 🟢`
-
-- **Additional** questions For the Product [Information](https://github.com/Cloud-Official/Product) / [Join Discord](https://discord.gg/MBTkVcJefp) 
-- **Legit and Undetectable** because we update it all the time.
-
-
-### 🛑 Warranty Product
-
-- **Support** 24\7 + Update free lifetime
-- **If banned = Refund + Spoofer free**
-
-A website that I created to introduce myself from start to finish. hope you like it [Fnoberz.com](https://fnoberz.com/)
-
----
    
    
  
@@ -84,7 +59,34 @@ Cleaner 0.1       |      Change IP  |
 CleanTraces       |      ChangeHDD  |
 Cleaner 0.2       |       Others    |
 ```
+---
 
+  <p align="center">
+    <a href="https://discord.com/users/943374631644045363">
+        <img title="Fnoberz server discord" alt="Fnoberz's discord" src="https://discord.c99.nl/widget/theme-4/943374631644045363.png"/>
+    </a>
+</p> 
+ 
+- ### 💬 Join Discord : [Clound Official](https://discord.gg/MBTkVcJefp) 
+
+### 📌: Private Cheat !
+`SOURCE CODE , PRIVATE CHEAT , SPOOFER , JOIN DISCORD`
+#### Read more details here. [Information](https://github.com/Cloud-Official/Product) 
+
+- It is safe and can be played on the main account.
+- You can request the features you want. (Which features are not safe? we will remind you)
+- After sales service which you don't have to worry about
+
+
+### 🛑: Warranty Product 
+
+- Support 24 Hr And Free Update Lifetime 
+- Private server.
+- If you get banned, we'll be happy to refund.
+
+A website that I created to introduce myself from start to finish. hope you like it [Fnoberz.com](https://fnoberz.com/)
+
+---
 
 ![cccccccccccccccc](https://user-images.githubusercontent.com/85826349/125170871-511eea00-e1db-11eb-93d6-8c6b514a1d62.png)
 ![image](https://user-images.githubusercontent.com/94861415/179344956-45761a1f-f0ef-45a9-a612-2e0e45e045e5.png)
