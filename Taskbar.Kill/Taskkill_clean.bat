@@ -11,6 +11,9 @@ taskkill /f /im FortniteClient-Win64-Shipping_EAC.exe
 
 sc stop BEService
 sc stop EasyAntiCheat
+sc stop Vanguard
+sc stop ricocheat
+sc stop defender
 :internettest
 cls
 echo waiting for internet reconnection
@@ -25,4 +28,6 @@ set target=www.google.com
 ping %target% -n 1 | find "Reply" > nul
 if errorlevel==1 goto internettest
 cls
+stop
 exit
+
