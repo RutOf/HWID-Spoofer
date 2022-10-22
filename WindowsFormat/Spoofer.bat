@@ -39,8 +39,6 @@ DevManView.exe /uninstall "Disk drive*" /use_wildcard
 DevManView.exe /uninstall "C:\"
 DevManView.exe /uninstall "D:\"
 DevManView.exe /uninstall "E:\"
-DevManView.exe /uninstall "F:\"
-DevManView.exe /uninstall "G:\"
 DevManView.exe /uninstall "Disk"
 DevManView.exe /uninstall "disk"
 DevManView.exe /uninstall "Disk&*" /use_wildcard
@@ -73,7 +71,6 @@ reg delete "HKLM\SOFTWARE\Microsoft\RADAR\HeapLeakDetection\DiagnosedApplication
 reg delete "HKCU\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\com.epicgames.launcher" /f
 reg delete "HKCR\com.epicgames.eos" /f
 reg delete "HKLM\SOFTWARE\Microsoft\RADAR\HeapLeakDetection\DiagnosedApplications" /f
-reg delete "HKEY_USERS\S-1-5-18\Software\Epic Games" /f
 
 echo wait....
 PING localhost -n 15 >NUL
