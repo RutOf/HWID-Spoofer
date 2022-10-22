@@ -1,5 +1,5 @@
 @echo off
-echo your shitty BaseBoard
+echo your shitty reset
 wmic baseboard get serialnumber
 echo your shitty Bios
 wmic bios get serialnumber
@@ -19,12 +19,13 @@ echo CPU
 wmic cpu get processorid
 echo BaseBoard
 wmic baseboard get manufacturer
-echo GPU
+echo GPUID
 wmic PATH Win32_VideoController GET Description,PNPDeviceID
 echo Mac Address
 getmac
 echo Other Stuff
 AMIDEWIN.EXE /dms serials.txt
 type serials.txt
+random serial.ext
 del /f serials.txt
 exit
