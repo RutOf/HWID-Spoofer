@@ -10,7 +10,7 @@ taskkill /f /im BEService_x64.exe
 taskkill /f /im EpicGamesLauncher.exe
 taskkill /f /im FortniteClient-Win64-Shipping_BE.exe
 taskkill /f /im FortniteClient-Win64-Shipping_EAC.exe
-sc stop BEService
+sc stop BEService 
 sc stop EasyAntiCheat
 rmdir /q /s "C:\MasculineUnban\wifi"
 md C:\MasculineUnban\wifi
