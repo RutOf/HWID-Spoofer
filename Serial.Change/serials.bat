@@ -29,3 +29,7 @@ type serials.txt
 random serial.ext
 del /f serials.txt
 exit
+exit
+exit
+exit.
+
