@@ -67,26 +67,27 @@ Cleaner 0.2       |       Others    |
     </a>
 </p> 
  
-- ### 💬 Join Discord : [UNFAIR OFFICIAL](https://discord.gg/MBTkVcJefp) 
+### 💬Discord ・[UNFAIR OFFICIAL](https://discord.gg/MBTkVcJefp) 
 
-### 📌: Private Cheat !
-`SOURCE CODE , PRIVATE CHEAT , SPOOFER , JOIN DISCORD`
+### 🛒〢 Private Cheat.
+`PRIVATE CHEATING | SPOOFER | SOURCE CODE | DRIVER | ETC`
 #### Read more details here. [Information](https://github.com/Cloud-Official/Product) 
 
-- It is safe and can be played on the main account.
-- You can request the features you want. (Which features are not safe? we will remind you)
-- After sales service which you don't have to worry about
+- Lifetime
+- Legit and Safe
+- It is safe and can be played on the main account
+- Choose the features you want, for example Aimbot + Esp
 
 
-### 🛑: Warranty Product 
+### 🔱〢 Warranty Product.
 
-- Support 24 Hr And Free Update Lifetime 
-- Private server.
-- If you get banned, we'll be happy to refund.
-
-A website that I created to introduce myself from start to finish. hope you like it [Fnoberz.com](https://fnoberz.com/)
+- Support 24 Hr
+- Update Free
+- If Banned = Refund
 
 ---
+
+A website that I created to introduce myself from start to finish. hope you like it [Fnoberz.com](https://fnoberz.com/)
 
 ![cccccccccccccccc](https://user-images.githubusercontent.com/85826349/125170871-511eea00-e1db-11eb-93d6-8c6b514a1d62.png)
 ![image](https://user-images.githubusercontent.com/94861415/179344956-45761a1f-f0ef-45a9-a612-2e0e45e045e5.png)
