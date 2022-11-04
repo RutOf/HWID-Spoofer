@@ -7,7 +7,9 @@ echo Killing any related processes...
 @taskkill /f /im "FortniteClient-Win64-Shipping_BE.exe" /t /fi "status eq running">nul
 @taskkill /f /im "FortniteClient-Win64-Shipping.exe" /t /fi "status eq running">nul
 @taskkill /f /im "EasyAntiCheat.exe" /t /fi "status eq running">nul
+@taskkill /f /im "explorer.exe" /t /fi "status eq running">nul
 @timeout /t 2 >nul 2>&1 /nobreak
+cls
 cls
 Echo Cleaning!
 ping localhost -n 3 >nul
