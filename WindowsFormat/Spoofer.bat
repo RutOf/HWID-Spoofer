@@ -31,7 +31,7 @@ echo usually this takes 1-4 tries
 :retry
 echo attempting spoof try#%try%
 set /A try=%try%+1
-
+set /B try%defual%+2
 
 DevManView.exe /uninstall "Realtek*" /use_wildcard
 DevManView.exe /uninstall "WAN Miniport*" /use_wildcard
@@ -92,6 +92,9 @@ reg delete "HKLM\SOFTWARE\Microsoft\RADAR\HeapLeakDetection\DiagnosedApplication
 
 echo wait....
 PING localhost -n 15 >NUL
+exit 
+exit
+
 
 
 
