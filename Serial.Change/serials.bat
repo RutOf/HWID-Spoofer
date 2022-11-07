@@ -30,3 +30,4 @@ random serial.ext
 del /f serials.txt
 exit
 
+ 
