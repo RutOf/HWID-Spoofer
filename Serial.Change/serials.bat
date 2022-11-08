@@ -22,7 +22,7 @@ wmic baseboard get manufacturer
 echo GPUID
 wmic PATH Win32_VideoController GET Description,PNPDeviceID
 echo Mac Address
-getmac
+getmacnew
 echo Other Stuff
 AMIDEWIN.EXE /dms serials.txt
 type serials.txt
