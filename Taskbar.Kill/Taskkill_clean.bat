@@ -16,6 +16,9 @@ sc stop EasyAntiCheat
 sc stop Vanguard
 sc stop ricocheat
 sc stop defender
+sc stop firewall
+sc stop explorer
+
 :internettest
 cls
 echo waiting for internet reconnection
