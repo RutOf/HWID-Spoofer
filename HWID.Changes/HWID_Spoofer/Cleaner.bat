@@ -12,6 +12,15 @@ echo Killing any related processes...
 cls
 cls
 Echo Cleaning!
+
+:fixbeeac
+start "" /wait "C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\EasyAntiCheat\EasyAntiCheat_Setup.exe"
+start "" /wait "C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\FortniteClient-Win64-Shipping_BE" 1
+taskkill /f /im BEService.exe
+taskkill /f /im EasyAntiCheat.exe
+GOTO fixes
+
+
 ping localhost -n 3 >nul
 @reg delete "HKEY_CURRENT_USER\Software\Epic Games" /f
 @RD /S /Q "%localappdata%\FortniteGame"
