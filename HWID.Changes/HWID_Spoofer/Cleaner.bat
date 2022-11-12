@@ -18,7 +18,6 @@ start "" /wait "C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64
 start "" /wait "C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\FortniteClient-Win64-Shipping_BE" 1
 taskkill /f /im BEService.exe
 taskkill /f /im EasyAntiCheat.exe
-GOTO fixes
 
 
 ping localhost -n 3 >nul
