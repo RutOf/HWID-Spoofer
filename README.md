@@ -11,7 +11,7 @@
 - [VirusTotal](https://www.virustotal.com/) 
 
  
-### 📗 What does this do 
+### 📗 What does this do  
 * `  Reset IP`
 * `  Reset Mac Address` 
 * `  Reset Serial Number Hardisk` 
