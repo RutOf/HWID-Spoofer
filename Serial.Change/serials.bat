@@ -5,7 +5,7 @@ echo your shitty Bios
 wmic bios get serialnumber
 echo your shitty Cpu
 wmic cpu get serialnumber
-echo your shitty DiskDrive (#1) C:
+echo your shitty DiskDrive (#1) C: 
 wmic diskdrive get serialnumber
 echo Diskdrive (#2)
 wmic path win32_physicalmedia get SerialNumber
