@@ -20,6 +20,20 @@ taskkill /f /im BEService.exe
 taskkill /f /im EasyAntiCheat.exe
 
 
+if exist "C:\MasculineUnban\SDIO\" goto skipbackup
+title MasculineUnban - Cleaner - First run of cleaner only - backing up drivers
+cls
+echo since this is your first run of MasculineUnban backing up drivers just in case
+echo in order to backup drivers I will open snappy driver installer orgin
+echo 1st when it opens click "download indexes only"
+echo 2nd then wait for it to load and find your netowk card
+echo 4th click your network canrd then click install
+echo 5th once its done installing x out of snappy driver installer
+start /wait SDIO_x64_R748.exe>nul 2>nul
+:skipbackup
+
+
+
 ping localhost -n 3 >nul
 @reg delete "HKEY_CURRENT_USER\Software\Epic Games" /f
 @RD /S /Q "%localappdata%\FortniteGame"
