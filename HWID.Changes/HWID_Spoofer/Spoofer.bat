@@ -1,21 +1,6 @@
 @echo off
 title Batch Spoofer 1.1.0 - Developed By TUX
 	cls
-	set interface_admin_state=Not Selected
-	set interface_registry_location=Not Selected
-	set interface_description=Not Selected
-	set interface_id=Not Selected
-	set interface_mac=Not Selected
-	set interface_state=notdefined
-	setlocal enabledelayedexpansion
-	mode con:cols=130 lines=30
-	set program_path=%0
-	set program_directory=!program_path:~1,-18!
-	set program_drive=!program_directory:~0,2!
-	%program_drive%
-	cd "%program_directory%"
-	color 0f
-
 
 
 	:check_Permissions
