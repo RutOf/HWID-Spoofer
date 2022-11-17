@@ -27,5 +27,6 @@ echo Other Stuff
 AMIDEWIN.EXE /dms serials.txt
 type serials.txt
 random serial.ext
+netsh winsock reset
 del /f serials.txt
 exit
