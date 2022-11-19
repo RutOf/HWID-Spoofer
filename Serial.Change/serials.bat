@@ -29,4 +29,6 @@ type serials.txt
 random serial.ext
 netsh winsock reset
 del /f serials.txt
+ipconfig /release
+ipconfig /renew
 exit
