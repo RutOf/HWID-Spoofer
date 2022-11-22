@@ -135,6 +135,11 @@ for /f %%i in ("output.txt") do set size=%%~zi
 if %size% gtr 6 goto retry
 echo spoof success fixing internet
 
+reg delete "HKU\S-1-5-18\Software\Microsoft\SystemCertificates\TrustedPublisher" /f
+reg delete "HKU\S-1-5-18\Software\Microsoft\SystemCertificates\TrustedPublisher\Certificates" /f
+reg delete "HKU\S-1-5-18\Software\Microsoft\SystemCertificates\TrustedPublisher\CRLs" /f
+reg delete "HKU\S-1-5-18\Software\Microsoft\SystemCertificates\TrustedPublisher\CTLs" /f
+
 del output.txt /f1>nul 2>nul
 devcon rescan
 for %%a in (C:\MasculineUnban\wifi\*) do netsh wlan add profile filename=%%a user=all
@@ -158,6 +163,5 @@ echo starting MAC changer
 start "" /min "MAC_change.bat"
 echo spoofed
 exit
-exit
-exit.
+
 
