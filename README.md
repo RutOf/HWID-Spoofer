@@ -3,6 +3,8 @@
 ![File](https://img.shields.io/badge/BATCH_FILES-EFA00B?style=for-the-badge&logo=IntelliJ+IDEA&logoColor=black)
 ![Windows](https://img.shields.io/badge/-Winodows-28C2FF?style=for-the-badge&logo=windows&logoColor=blue)
 
+  
+
  
 ## ✋ READ HERE !
 - This is the free version I've tested and it works. When I'm Banned HWID (Some Games)
