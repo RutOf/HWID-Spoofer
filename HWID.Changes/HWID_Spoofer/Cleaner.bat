@@ -1,18 +1,4 @@
 @echo off
-title Cleaner
-ping localhost -n 3 >nul
-echo Killing any related processes...
-@taskkill /f /im "EpicGamesLauncher.exe" /t /fi "status eq running">nul
-@taskkill /f /im "FortniteLauncher.exe" /t /fi "status eq running">nul
-@taskkill /f /im "FortniteClient-Win64-Shipping_BE.exe" /t /fi "status eq running">nul
-@taskkill /f /im "FortniteClient-Win64-Shipping.exe" /t /fi "status eq running">nul
-@taskkill /f /im "EasyAntiCheat.exe" /t /fi "status eq running">nul
-@taskkill /f /im "explorer.exe" /t /fi "status eq running">nul
-@timeout /t 2 >nul 2>&1 /nobreak
-cls
-cls
-Echo Cleaning!
-
 
 if exist "C:\MasculineUnban\SDIO\" goto skipbackup
 title MasculineUnban - Cleaner - First run of cleaner only - backing up drivers
