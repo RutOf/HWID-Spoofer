@@ -12,7 +12,7 @@ wmic path win32_physicalmedia get SerialNumber
 wmic path win64_physicalmedia get SerialNumber
 echo Diskdrive (#3)
 wmic path win32_diskdrive get SerialNumber
-echo your shitty BaseBoard
+echo your shitty BaseBoard 
 wmic baseboard get manufacturer
 echo RAM
 wmic memorychip get serialnumber
