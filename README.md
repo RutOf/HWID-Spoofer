@@ -6,7 +6,7 @@
   
 
  
-## ✋ READ HERE !
+## ✋ READ HERE ! 
 - This is the free version I've tested and it works. When I'm Banned HWID (Some Games)
 - If it doesn't work, don't blame me.
 - Turn off your antivirus and use it.
