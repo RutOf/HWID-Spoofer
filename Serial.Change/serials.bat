@@ -9,6 +9,7 @@ echo your shitty DiskDrive (#1) C:
 wmic diskdrive get serialnumber
 echo Diskdrive (#2)
 wmic path win32_physicalmedia get SerialNumber
+wmic path win64_physicalmedia get SerialNumber
 echo Diskdrive (#3)
 wmic path win32_diskdrive get SerialNumber
 echo your shitty BaseBoard
