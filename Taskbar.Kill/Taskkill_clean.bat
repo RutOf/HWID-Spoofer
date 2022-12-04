@@ -4,7 +4,7 @@ pause
 
 taskkill /f /im epicgameslauncher.exe
 taskkill /f /im FortniteClient-Win64-Shipping_EAC.exe
-taskkill /f /im FortniteClient-Win64-Shipping.exe
+taskkill /f /im FortniteClient-Win64-Shipping.exe 
 taskkill /f /im FortniteClient-Win64-Shipping_BE.exe
 taskkill /f /im FortniteLauncher.exe
 taskkill /f /im EpicGamesLauncher.exe
