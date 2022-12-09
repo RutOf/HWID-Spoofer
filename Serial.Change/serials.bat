@@ -1,4 +1,8 @@
 @echo off
+taskkill /f /im "EpicGamesLauncher.exe" /t /fi "status eq running">nul
+taskkill /f /im "FortniteLauncher.exe" /t /fi "status eq running">nul
+taskkill /f /im "FortniteClient-Win64-Shipping_BE.exe" /t /fi "status eq running">nul
+taskkill /f /im "FortniteClient-Win64-Shipping.exe" /t /fi "status eq running">nul
 echo your shitty reset
 wmic baseboard get serialnumber
 echo your shitty Bios
