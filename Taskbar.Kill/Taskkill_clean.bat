@@ -50,9 +50,9 @@ taskkill /f /im Client.exe
 
 
 sc stop Steam
-sc stop Discord
 sc stop BEService
 sc stop EasyAntiCheat
+sc stop PunkBuster
 sc stop Vanguard
 sc stop ricocheat
 sc stop defender
