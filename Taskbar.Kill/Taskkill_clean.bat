@@ -1,7 +1,7 @@
 @echo off
-
-pause
-
+echo.
+echo.
+echo.
 taskkill /f /im epicgameslauncher.exe
 taskkill /f /im FortniteClient-Win64-Shipping_EAC.exe
 taskkill /f /im FortniteClient-Win64-Shipping.exe 
@@ -47,7 +47,6 @@ taskkill /f /im OriginThinSetupInternal.exe
 taskkill /f /im OriginLegacyCLI.exe
 taskkill /f /im Agent.exe
 taskkill /f /im Client.exe
-
 
 sc stop Steam
 sc stop BEService
