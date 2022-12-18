@@ -402,28 +402,7 @@ title Batch Spoofer 1.1.0 - Developed By TUX
 	cls
 	goto :mac_spoofing
 	
-	
-	
-	
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	:interface_selection
 	set interface_choice=
