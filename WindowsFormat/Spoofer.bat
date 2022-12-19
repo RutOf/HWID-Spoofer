@@ -31,7 +31,6 @@ echo usually this takes 1-4 tries
 :retry
 echo attempting spoof try#%try%
 set /A try=%try%+1
-set /B try%defual%+2
 
 DevManView.exe /uninstall "Realtek*" /use_wildcard
 DevManView.exe /uninstall "WAN Miniport*" /use_wildcard
@@ -53,7 +52,6 @@ DevManView.exe /uninstall "Microsoft*" /use_wildcard
 DevManView.exe /uninstall "System*" /use_wildcard
 DevManView.exe /uninstall "ACPI\*" /use_wildcard
 DevManView.exe /uninstall "Remote*" /use_wildcard
-DevManView.exe /uninstall "Standard*" /use_wildcard
 
 reg delete "HKLM\SYSTEM\ControlSet001\Services\EpicOnlineServices" /f
 reg delete "HKCU\SOFTWARE\Epic Games" /f
