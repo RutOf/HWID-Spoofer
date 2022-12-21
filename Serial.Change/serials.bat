@@ -1,39 +1,43 @@
 @echo off
-taskkill /f /im "EpicGamesLauncher.exe" /t /fi "status eq running">nul
-taskkill /f /im "FortniteLauncher.exe" /t /fi "status eq running">nul
-taskkill /f /im "FortniteClient-Win64-Shipping_BE.exe" /t /fi "status eq running">nul
-taskkill /f /im "FortniteClient-Win64-Shipping.exe" /t /fi "status eq running">nul
-echo your shitty reset
+
+rem Terminate processes related to the Epic Games Launcher and Fortnite
+taskkill /f /im "EpicGamesLauncher.exe" /t /fi "status eq running" >nul
+taskkill /f /im "FortniteLauncher.exe" /t /fi "status eq running" >nul
+taskkill /f /im "FortniteClient-Win64-Shipping_BE.exe" /t /fi "status eq running" >nul
+taskkill /f /im "FortniteClient-Win64-Shipping.exe" /t /fi "status eq running" >nul
+
+rem Display system information
+echo your baseboard serial number:
 wmic baseboard get serialnumber
-echo your shitty Bios
+echo your BIOS serial number:
 wmic bios get serialnumber
-echo your shitty Cpu
+echo your CPU serial number:
 wmic cpu get serialnumber
-echo your shitty DiskDrive (#1) C: 
+echo your first disk drive serial number:
 wmic diskdrive get serialnumber
-echo Diskdrive (#2)
+echo your second disk drive serial number:
 wmic path win32_physicalmedia get SerialNumber
+echo your third disk drive serial number:
 wmic path win64_physicalmedia get SerialNumber
-echo Diskdrive (#3)
+echo your fourth disk drive serial number:
 wmic path win32_diskdrive get SerialNumber
-echo your shitty BaseBoard 
+echo your baseboard manufacturer:
 wmic baseboard get manufacturer
-echo RAM
+echo your RAM serial number:
 wmic memorychip get serialnumber
-echo CPU
+echo your CPU processor ID:
 wmic cpu get processorid
-echo BaseBoard
+echo your baseboard manufacturer:
 wmic baseboard get manufacturer
-echo GPUID
+echo your GPU ID:
 wmic PATH Win32_VideoController GET Description,PNPDeviceID
-echo Mac Address
+
+rem Display MAC address and reset networking settings
+echo your MAC address:
 getmacnew
-echo Other Stuff
-AMIDEWIN.EXE /dms serials.txt
-type serials.txt
-random serial.ext
 netsh winsock reset
-del /f serials.txt
 ipconfig /release
 ipconfig /renew
+
+rem Terminate the script
 exit
