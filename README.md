@@ -6,30 +6,32 @@
     
  
   
-## ✋ READ HERE ! 
-- This is the free version I've tested and it works. When I'm Banned HWID (Some Games)
-- If it doesn't work, don't blame me.
-- Turn off your antivirus and use it.
+## ✋ READ
+
+- Do not sell
+- Disable Anti-Virus
+- version, you do so at your own risk.
 - [VirusTotal](https://www.virustotal.com/)  
    
       
-### 📗 What does this do     
-* `  Reset IP` 
-* `  Reset Mac Address` 
-* `  Reset Serial Number Hardisk` 
-* `  Clear Temp File & and files that are deepest in Folder (does not affect PC )`
-* `  Eliminate rubbish, residue from Cheating Program & residual ban`
- 
-         
+## FEATURE
+
+- Hardware ID
+- Reset IP
+- Serial Number
+- S/N 
+- SMBIOS 
+- Regedit 
+- License
   
-#### 💢 IF YOU CAN'T SEE THE " OOF.EXE "
+## HIDE
+
+- If you can't find some files Follow the video below.
 
 
 https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-aff7-fc0062fa24ca.mp4
 
-
- 
-*** 
+---
 
 
 ### **Supported** Windows 10 versions   
@@ -60,19 +62,17 @@ Cleaner 0.1       |      Change IP  |
 CleanTraces       |      ChangeHDD  |
 Cleaner 0.2       |       Others    |
 ```
----
+--- 
 
   <p align="center">
-    <a href="https://discord.com/users/943374631644045363">
-        <img title="Fnoberz server discord" alt="Fnoberz's discord" src="https://discord.c99.nl/widget/theme-4/943374631644045363.png"/>
+    <a href="https://discord.gg/MBTkVcJefp">
+        <img title="Slackes server discord" alt="Slackes discord" src="https://discordapp.com/api/guilds/880135738077896764/widget.png?style=banner2"/>
     </a>
 </p> 
  
-### 💬 ・HELP & SUPPORT | [Discord](https://discord.gg/MBTkVcJefp) 
+## 💬 ・[Discord](https://discord.gg/MBTkVcJefp) 
 
-
- ### 🛒〢 `PRIVATE CHEAT`
- More Here [Information](https://github.com/Club-CC/Detail)
+ ### 🛒〢 `PRODUCT`
  
 <table>
 <tr>
@@ -82,17 +82,18 @@ Cleaner 0.2       |       Others    |
 </table>
 
   
-### 🎯 〢 Product Cheat
+### 🥊 〢 Private Cheat
 
-- Lifetime + Update Free
+- Lifetime 
+- Free Updates 
+- Undetected
 - Custom Feature if you want `(Example: Aimbot + Esp + Skin Changers)`
-- Undetected and can be played on the main account.
 
+### ⚓〢 Warranty
 
-### 💯〢 Warranty Product.
-
-- Support 24 Hr + Update Free
-- IF Banned = REFUND
+- Support 24 Hr
+- Update Free
+- If banned = `REFUND`
 
 A website that I created to introduce myself from start to finish. hope you like it [Slackes.me](http://slackes.me/)
 
@@ -103,9 +104,7 @@ A website that I created to introduce myself from start to finish. hope you like
 ![image](https://user-images.githubusercontent.com/94861415/179344958-86916656-c34c-447d-b351-81a86324edfd.png)
 ![image](https://user-images.githubusercontent.com/94861415/179344963-7d2dfc59-2a17-43df-993a-64ab763529f7.png)
  
- 
-
-
+---
 
 
 <h2 align="center"> Copyright © 2021 - 2022
