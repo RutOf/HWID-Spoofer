@@ -1,5 +1,4 @@
 @echo off
-
 rem Set the title of the command prompt window
 title IP Configuration Utility
 
