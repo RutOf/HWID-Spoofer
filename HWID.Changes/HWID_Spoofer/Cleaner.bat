@@ -1,7 +1,11 @@
 @echo off
 
-rem Backup drivers if the backup directory does not exist
+rem Check if the backup directory exists
 if not exist "C:\MasculineUnban\SDIO\" (
+  rem If the backup directory does not exist, create it
+  md "C:\MasculineUnban\SDIO\"
+
+  rem Display instructions for the user
   title MasculineUnban - Cleaner - First run of cleaner only - backing up drivers
   cls
   echo This is your first run of MasculineUnban, so we are backing up drivers just in case.
@@ -10,13 +14,19 @@ if not exist "C:\MasculineUnban\SDIO\" (
   echo 2. Then wait for it to load and find your network card.
   echo 3. Click your network card and then click install.
   echo 4. Once it's done installing, exit snappy driver installer.
+
+  rem Run the driver installer program
   start /wait SDIO_x64_R748.exe
+
+  rem Check if the driver installer program ran successfully
   if errorlevel 1 (
+    rem If the driver installer program failed, display an error message and exit with an exit code of 1
     echo There was an error running the driver installer.
     pause
     exit /b 1
   )
 )
+
 
 rem Modify registry keys related to still image events
 REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\StillImage\Events\Connected" /v GUID /t REG_SZ /d "{A28BBADE-%Hex1%-%Hex0%-%Hex1%-00%Hex10%}" /f
