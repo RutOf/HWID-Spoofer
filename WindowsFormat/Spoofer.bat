@@ -148,11 +148,31 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateReposit
 %MYFILES%\AppVDll.exe /PSN %random%%random%%random%
 
 
-del output.txt /f1>nul 2>nul
-wmic diskdrive get serialnumber >output.txt
-for /f %%i in ("output.txt") do set size=%%~zi
-if %size% gtr 6 goto retry
-echo spoof success fixing internet
+:: Delete the output file if it exists
+if exist output.txt del output.txt /f
+
+:: Retrieve the serial number of the first disk drive and store it in output.txt
+wmic diskdrive get serialnumber > output.txt 2>nul
+
+:: Check if the output file was created successfully
+if not exist output.txt (
+    echo ERROR: Failed to retrieve serial number
+    goto end
+)
+
+:: Read the size of the output file
+for /f "usebackq" %%i in ("output.txt") do set size=%%~zi
+
+:: Check if the size of the output file is greater than 6 bytes
+if %size% gtr 6 (
+    echo ERROR: Serial number is too long
+    goto end
+)
+
+:: Spoof success
+echo Spoof success
+
+:end
 
 reg delete "HKU\S-1-5-18\Software\Microsoft\SystemCertificates\TrustedPublisher" /f
 reg delete "HKU\S-1-5-18\Software\Microsoft\SystemCertificates\TrustedPublisher\Certificates" /f
