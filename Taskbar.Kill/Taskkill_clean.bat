@@ -63,15 +63,20 @@ cls
 echo waiting for internet reconnection
 echo you may need to manually reconnect to wifi
 echo if no wifi networks exist or not reconnecting
-echo go to device manager then uninstall your network card
-echo its under the network adapters section
-echo it will probably have some kind of brand name
-echo then go to the action section and click "scan for hardware changes"
-echo then you will have internet
+echo go to device manager and check network adapters
+echo if the network card is not present or not functioning
+echo go to the action menu and click "scan for hardware changes"
+echo this will install any missing or updated drivers
+echo if this does not resolve the issue, try restarting the device
 set target=www.google.com
 ping %target% -n 1 | find "Reply" > nul
 if errorlevel==1 goto internettest
 cls
-stop
+echo internet connection established
+echo stopping script
+goto end
+
+:end
+echo script has stopped
 exit
 
