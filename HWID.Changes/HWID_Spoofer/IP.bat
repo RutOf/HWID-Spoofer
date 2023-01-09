@@ -1,33 +1,17 @@
-@echo off
-rem Set the title of the command prompt window
-title IP Configuration Utility
+@echo off echo Choose: echo [A] Set Static IP echo [B] Set DHCP echo. :choice SET /P C=[A,B]? for %%? in (A) do if /I %C%==%%? goto A for %%? in (B) do if /I %C%==%%? goto B goto choice :A @echo off echo Please enter Static IP Address Information echo Static IP Address: set /p IP_Addr=
 
-rem Release the current IP address for the network adapter
-echo Releasing IP address...
-ipconfig /release
-echo Done.
+echo Default Gateway: set /p D_Gate=
 
-rem Flush the DNS cache
-echo Flushing DNS cache...
-ipconfig /flushdns
-echo Done.
+echo Subnet Mask: set /p Sub_Mask=
 
-rem Renew the IP address for the network adapter
-echo Renewing IP address...
+echo Setting Static IP Information netsh interface ip set address LAN static %IP_Addr% %Sub_Mask% %D_Gate% 1 netsh int ip show config pause goto end
+
+:B @ECHO OFF ECHO Resetting IP Address and Subnet Mask For DHCP netsh int ip set address name = LAN source = dhcp
+
 ipconfig /renew
-echo Done.
 
-rem Flush the DNS cache again
-echo Flushing DNS cache...
-ipconfig /flushdns
-echo Done.
+ECHO Here are the new settings for %computername%: netsh int ip show config
 
-rem Wait for 3 seconds to give the commands time to complete
-ping localhost -n 3 >nul
+pause goto end :end
 
-echo All tasks completed successfully.
-echo Press any key to exit.
-pause >nul
-
-rem Close the command prompt window
-exit
+Script END!
