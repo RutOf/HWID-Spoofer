@@ -1,10 +1,14 @@
 @echo off
 
-rem Terminate processes related to the Epic Games Launcher and Fortnite
-taskkill /f /im "EpicGamesLauncher.exe" /t /fi "status eq running" >nul
-taskkill /f /im "FortniteLauncher.exe" /t /fi "status eq running" >nul
-taskkill /f /im "FortniteClient-Win64-Shipping_BE.exe" /t /fi "status eq running" >nul
-taskkill /f /im "FortniteClient-Win64-Shipping.exe" /t /fi "status eq running" >nul
+rem Terminate Epic Games Launcher and Fortnite processes
+
+taskkill /f /t /fi "imagename eq EpicGamesLauncher.exe" >nul 2>&1
+taskkill /f /t /fi "imagename eq FortniteLauncher.exe" >nul 2>&1
+taskkill /f /t /fi "imagename eq FortniteClient-Win64-Shipping_BE.exe" >nul 2>&1
+taskkill /f /t /fi "imagename eq FortniteClient-Win64-Shipping.exe" >nul 2>&1
+
+echo Processes terminated.
+
 
 rem Display system information
 echo your baseboard serial number:
