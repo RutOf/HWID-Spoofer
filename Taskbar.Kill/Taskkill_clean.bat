@@ -60,23 +60,21 @@ sc stop explorer
 
 :internettest
 cls
-echo waiting for internet reconnection
-echo you may need to manually reconnect to wifi
-echo if no wifi networks exist or not reconnecting
-echo go to device manager and check network adapters
-echo if the network card is not present or not functioning
-echo go to the action menu and click "scan for hardware changes"
-echo this will install any missing or updated drivers
-echo if this does not resolve the issue, try restarting the device
-set target=www.google.com
-ping %target% -n 1 | find "Reply" > nul
-if errorlevel==1 goto internettest
+echo waiting for internet reconnection...
+ping -n 1 google.com >nul
+if not %errorlevel%==0 (
+echo No internet connection found.
+echo You may need to manually reconnect to wifi.
+echo If no wifi networks exist or not reconnecting, please go to device manager and check network adapters.
+echo If the network card is not present or not functioning, please go to the Action menu and click "Scan for Hardware Changes".
+echo This will install any missing or updated drivers.
+echo If this does not resolve the issue, try restarting the device.
+goto internettest
+)
 cls
-echo internet connection established
-echo stopping script
+echo Internet connection established.
+echo Stopping script...
 goto end
-
 :end
-echo script has stopped
+echo Script has stopped.
 exit
-
