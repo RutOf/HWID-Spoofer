@@ -60,16 +60,24 @@ sc stop explorer
 
 :internettest
 cls
-echo waiting for internet reconnection...
+echo Checking for internet connection...
 ping -n 1 google.com >nul
 if not %errorlevel%==0 (
 echo No internet connection found.
-echo You may need to manually reconnect to wifi.
-echo If no wifi networks exist or not reconnecting, please go to device manager and check network adapters.
+echo Reconnecting to wifi...
+netsh wlan connect name="your_wifi_network_name"
+ping -n 1 google.com >nul
+if not %errorlevel%==0 (
+echo Unable to connect to wifi.
+echo Checking network adapters...
+pause
+start devmgmt.msc
 echo If the network card is not present or not functioning, please go to the Action menu and click "Scan for Hardware Changes".
 echo This will install any missing or updated drivers.
 echo If this does not resolve the issue, try restarting the device.
+pause
 goto internettest
+)
 )
 cls
 echo Internet connection established.
@@ -77,4 +85,3 @@ echo Stopping script...
 goto end
 :end
 echo Script has stopped.
-exit
