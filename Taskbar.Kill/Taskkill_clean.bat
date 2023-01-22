@@ -1,7 +1,8 @@
 @echo off
 echo.
 echo.
-echo.
+
+
 taskkill /f /im epicgameslauncher.exe
 taskkill /f /im FortniteClient-Win64-Shipping_EAC.exe
 taskkill /f /im FortniteClient-Win64-Shipping.exe 
@@ -62,22 +63,21 @@ sc stop explorer
 cls
 echo Checking for internet connection...
 ping -n 1 google.com >nul
-if not %errorlevel%==0 (
-echo No internet connection found.
-echo Reconnecting to wifi...
-netsh wlan connect name="your_wifi_network_name"
-ping -n 1 google.com >nul
-if not %errorlevel%==0 (
-echo Unable to connect to wifi.
-echo Checking network adapters...
-pause
-start devmgmt.msc
-echo If the network card is not present or not functioning, please go to the Action menu and click "Scan for Hardware Changes".
-echo This will install any missing or updated drivers.
-echo If this does not resolve the issue, try restarting the device.
-pause
-goto internettest
-)
+if %errorlevel%==1 (
+    echo No internet connection found.
+    echo Reconnecting to wifi...
+    netsh wlan connect name="your_wifi_network_name"
+    ping -n 1 google.com >nul
+    if %errorlevel%==1 (
+        echo Unable to connect to wifi.
+        echo Checking network adapters...
+        ipconfig /all
+        echo Please check if the network card is present and functioning.
+        echo If the network card is not present or not functioning, please go to the Device Manager and update the driver.
+        echo If this does not resolve the issue, try restarting the device.
+        pause
+        goto internettest
+    )
 )
 cls
 echo Internet connection established.
