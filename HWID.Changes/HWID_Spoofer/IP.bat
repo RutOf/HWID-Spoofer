@@ -1,48 +1,17 @@
-@echo off
+@echo off echo Choose: echo [A] Set Static IP echo [B] Set DHCP echo. :choice SET /P C=[A,B]? for %%? in (A) do if /I %C%==%%? goto A for %%? in (B) do if /I %C%==%%? goto B goto choice :A @echo off echo Please enter Static IP Address Information echo Static IP Address: set /p IP_Addr=
 
-:start
-cls
-echo Choose:
-echo [A] Set Static IP
-echo [B] Set DHCP
-echo.
+echo Default Gateway: set /p D_Gate=
 
-set /p choice=[A,B]?
+echo Subnet Mask: set /p Sub_Mask=
 
-if /i "%choice%"=="A" (
-    cls
-    echo Please enter Static IP Address Information:
-    echo.
-    set /p IP_Addr=IP Address: 
-    set /p D_Gate=Default Gateway: 
-    set /p Sub_Mask=Subnet Mask: 
-    echo.
+echo Setting Static IP Information netsh interface ip set address LAN static %IP_Addr% %Sub_Mask% %D_Gate% 1 netsh int ip show config pause goto end
 
-    netsh interface ip set address LAN static %IP_Addr% %Sub_Mask% %D_Gate% 1
-    echo.
-    echo Static IP address has been set.
-    pause
-    goto end
-)
+:B @ECHO OFF ECHO Resetting IP Address and Subnet Mask For DHCP netsh int ip set address name = LAN source = dhcp
 
-if /i "%choice%"=="B" (
-    cls
-    echo Resetting IP Address and Subnet Mask for DHCP...
-    echo.
-    netsh interface ip set address name=LAN source=dhcp
-    ipconfig /renew
-    echo.
-    echo DHCP has been set.
-    pause
-    goto end
-)
+ipconfig /renew
 
-echo Invalid choice. Please select either A or B.
-pause
-goto start
+ECHO Here are the new settings for %computername%: netsh int ip show config
 
-:end
-cls
-echo Current IP Configuration:
-netsh int ip show config
-pause
+pause goto end :end
+
+Script END!
