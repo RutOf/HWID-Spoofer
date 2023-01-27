@@ -4,53 +4,46 @@
 #include <fstream>
 
 namespace KeyAuth {
-	class api {
-	public:
+    class API {
+    public:
+        API(const std::string& name, const std::string& ownerId, const std::string& secret, const std::string& version, const std::string& url);
 
-		std::string name, ownerid, secret, version, url;
+        void Ban(const std::string& reason = "");
+        void Init();
+        void Check();
+        void Log(const std::string& message);
+        void License(const std::string& key);
+        std::string Var(const std::string& varId);
+        std::string Webhook(const std::string& id, const std::string& params);
+        void SetVar(const std::string& var, const std::string& varData);
+        std::string GetVar(const std::string& var);
+        bool CheckBlack();
+        void Upgrade(const std::string& username, const std::string& key);
+        void Login(const std::string& username, const std::string& password);
+        void WebLogin();
+        void Button(const std::string& value);
+        std::vector<unsigned char> Download(const std::string& fileId);
+        void Register(const std::string& username, const std::string& password, const std::string& key);
 
-		api(std::string name, std::string ownerid, std::string secret, std::string version, std::string url) : name(name), ownerid(ownerid), secret(secret), version(version), url(url) {}
-
-		void ban(std::string reason = "");
-		void init();
-		void check();
-		void log(std::string msg);
-		void license(std::string key);
-		std::string var(std::string varid);
-		std::string webhook(std::string id, std::string params);
-		void setvar(std::string var, std::string vardata);
-		std::string getvar(std::string var);
-		bool checkblack();
-		void upgrade(std::string username, std::string key);
-		void login(std::string username, std::string password);
-		void web_login();
-		void button(std::string value);
-		std::vector<unsigned char> download(std::string fileid);
-		void regstr(std::string username, std::string password, std::string key);
-
-		class data_class {
-		public:
-			// app data
-			std::string numUsers;
-			std::string numOnlineUsers;
-			std::string numKeys;
-			std::string version;
-			std::string customerPanelLink;
-			// user data
-			std::string username;
-			std::string ip;
-			std::string hwid;
-			std::string createdate;
-			std::string lastlogin;
-			std::vector<std::string> subscriptions;
-			std::string expiry;
-			// response data
-			bool success;
-			std::string message;
-		};
-		data_class data;
-
-	private:
-		std::string sessionid, enckey;
-	};
+        struct Data {
+            std::string numUsers;
+            std::string numOnlineUsers;
+            std::string numKeys;
+            std::string version;
+            std::string customerPanelLink;
+            std::string username;
+            std::string ip;
+            std::string hwid;
+            std::string createdDate;
+            std::string lastLogin;
+            std::vector<std::string> subscriptions;
+            std::string expiry;
+            bool success;
+            std::string message;
+        };
+        Data data;
+    private:
+        std::string m_sessionId;
+        std::string m_encryptionKey;
+    };
 }
