@@ -8,25 +8,29 @@
 #include "other.h"
 #include "auth.hpp"
 
-std::string tm_to_readable_time(tm ctx);
-static std::time_t string_to_timet(std::string timestamp);
-static std::tm timet_to_tm(time_t timestamp);
-
-DWORD fortnitechkk(LPVOID in) {
-
-	while (1) {
-		if (GetAsyncKeyState(NULL) & 1) {
-
-		}
-		else
-		{
-			fortnitechk();
-		}
-
-
-
-	}
+DWORD WINAPI fortnitechkk(LPVOID in) {
+    auto start_time = std::chrono::system_clock::now();
+    while (true) {
+        MSG msg;
+        if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)) {
+            if (msg.message == WM_QUIT) {
+                break;
+            }
+            TranslateMessage(&msg);
+            DispatchMessage(&msg);
+        }
+        else {
+            auto current_time = std::chrono::system_clock::now();
+            auto elapsed_time = current_time - start_time;
+            if (elapsed_time.count() > 1) {
+                start_time = current_time;
+                fortnitechk();
+            }
+        }
+    }
+    return 0;
 }
+
 
 struct slowly_printing_string {
 	std::string data;
