@@ -65,15 +65,9 @@ Cleaner 0.2       |       Others    |
 - Safe  on main account without getting banned / no need to turn off virus scan Scroll down to the bottom to read more.
 - [Discord](https://discord.gg/MBTkVcJefp) 
 
----
-
-  <p align="center">
-    <a href="https://discord.gg/MBTkVcJefp">
-        <img title="Slackes server discord" alt="Slackes discord" src="https://discordapp.com/api/guilds/880135738077896764/widget.png?style=banner2"/>
-    </a>
-</p> 
+--- 
  
-## 💬 ・[Discord](https://discord.gg/MBTkVcJefp) 
+## 💬 ・[Telegram](https://t.me/Slackes) 
 
  ### 🛒〢 `SHOP`
  
@@ -102,12 +96,6 @@ A website that I created to introduce myself from start to finish. hope you like
 
 ---
 
-![cccccccccccccccc](https://user-images.githubusercontent.com/85826349/125170871-511eea00-e1db-11eb-93d6-8c6b514a1d62.png)
-![image](https://user-images.githubusercontent.com/94861415/179344956-45761a1f-f0ef-45a9-a612-2e0e45e045e5.png)
-![image](https://user-images.githubusercontent.com/94861415/179344958-86916656-c34c-447d-b351-81a86324edfd.png)
-![image](https://user-images.githubusercontent.com/94861415/179344963-7d2dfc59-2a17-43df-993a-64ab763529f7.png)
- 
----
 
   <br>
 
@@ -115,5 +103,3 @@ A website that I created to introduce myself from start to finish. hope you like
   Copyright © 2021 - 2022
 <br>
 
-
-  
