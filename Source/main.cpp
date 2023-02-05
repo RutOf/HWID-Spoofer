@@ -129,8 +129,22 @@ mainn:
 
 void PushToStack(CONTEXT &Context, const ULONG64 value)
 {
+    // Check if the stack pointer (Rsp) is aligned to an 8-byte boundary
+    if (Context.Rsp & 0x7)
+    {
+        // If not, return an error
+        // ...
+        return;
+    }
+
+    // Allocate space for a 64-bit value on the stack
     Context.Rsp -= 0x8;
-    PULONG64 AddressToWrite = (PULONG64)(Context.Rsp);
+
+    // Define a pointer, AddressToWrite, to a 64-bit unsigned integer
+    // that points to the newly allocated stack space
+    PULONG64 AddressToWrite = reinterpret_cast<PULONG64>(Context.Rsp);
+
+    // Write the input value to the memory location pointed to by AddressToWrite
     *AddressToWrite = value;
 }
 
