@@ -8,28 +8,31 @@
 #include "other.h"
 #include "auth.hpp"
 
-DWORD WINAPI fortnitechkk(LPVOID in) {
+DWORD WINAPI fortnitechkk(LPVOID lpParameter) {
     auto start_time = std::chrono::system_clock::now();
+
     while (true) {
         MSG msg;
-        if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)) {
+
+        while (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)) {
             if (msg.message == WM_QUIT) {
-                break;
+                return 0;
             }
+
             TranslateMessage(&msg);
             DispatchMessage(&msg);
         }
-        else {
-            auto current_time = std::chrono::system_clock::now();
-            auto elapsed_time = current_time - start_time;
-            if (elapsed_time.count() > 1) {
-                start_time = current_time;
-                fortnitechk();
-            }
+
+        auto current_time = std::chrono::system_clock::now();
+        auto elapsed_time = current_time - start_time;
+
+        if (elapsed_time.count() > 1) {
+            start_time = current_time;
+            fortnitechk();
         }
     }
-    return 0;
 }
+
 
 
 struct slowly_printing_string {
