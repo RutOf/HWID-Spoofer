@@ -1,9 +1,9 @@
 <h1 align="center">
-HWID Spoofer 🎈
+HWID Spoofer 💡
 </h1>
 
 <p align="center">
-  Change the motherboard number and so on.
+  Remove HardwareID & Changed Serial Numners
 </p>
 
 
@@ -65,7 +65,7 @@ Cleaner 0.2       |       Others    |
 - Safe  on main account without getting banned / no need to turn off virus scan Scroll down to the bottom to read more.
 - [Discord](https://discord.gg/2euDQqzD8Y) 
 
----
+--- 
 
   <p align="center">
     <a href="https://discord.gg/2euDQqzD8Y">
@@ -73,9 +73,9 @@ Cleaner 0.2       |       Others    |
     </a>
 </p> 
  
-## 💬 ・[Discord](https://discord.gg/2euDQqzD8Y) 
+## 💬 ・[Discord Server](https://discord.gg/2euDQqzD8Y) 
 
- ### 🛒〢 `SHOP`
+ ### 🛒〢 `PRODUCT`
  
 <table>
 <tr>
@@ -92,7 +92,7 @@ Cleaner 0.2       |       Others    |
 - Undetected
 - Custom Feature if you want `(Example: Aimbot + Esp + Skin Changers)`
 
-### 📌〢 Warranty
+### 🔱〢 Warranty
 
 - Support 24 Hr
 - Update Free
@@ -102,18 +102,17 @@ A website that I created to introduce myself from start to finish. hope you like
 
 ---
 
-![cccccccccccccccc](https://user-images.githubusercontent.com/85826349/125170871-511eea00-e1db-11eb-93d6-8c6b514a1d62.png)
-![image](https://user-images.githubusercontent.com/94861415/179344956-45761a1f-f0ef-45a9-a612-2e0e45e045e5.png)
-![image](https://user-images.githubusercontent.com/94861415/179344958-86916656-c34c-447d-b351-81a86324edfd.png)
-![image](https://user-images.githubusercontent.com/94861415/179344963-7d2dfc59-2a17-43df-993a-64ab763529f7.png)
- 
----
-
   <br>
 
 <p align="center">
   Copyright © 2021 - 2022
 <br>
 
+![cccccccccccccccc](https://user-images.githubusercontent.com/85826349/125170871-511eea00-e1db-11eb-93d6-8c6b514a1d62.png)
+![image](https://user-images.githubusercontent.com/94861415/179344956-45761a1f-f0ef-45a9-a612-2e0e45e045e5.png)
+![image](https://user-images.githubusercontent.com/94861415/179344958-86916656-c34c-447d-b351-81a86324edfd.png)
+![image](https://user-images.githubusercontent.com/94861415/179344963-7d2dfc59-2a17-43df-993a-64ab763529f7.png)
+ 
+---
 
   
