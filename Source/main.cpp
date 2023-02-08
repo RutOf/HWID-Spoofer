@@ -57,76 +57,59 @@ using namespace std;
 
 int main()
 {
-	ShowWindow(GetConsoleWindow(), SW_SHOW);
-	system(E("color b"));
-	SetConsoleTitle(E(L"Simply Coded A Perm Unban      discord.gg/simply"));
-	system(E("cls"));
-	std::cout << slowly_printing_string{ "\n\n\n Welcome To Simply's Coded Perm Spoofer",85 };
-	std::cout << slowly_printing_string{ "\n\n Last Updated: 1/10/2023",75 };
-	CreateThread(NULL, NULL, loopDbg, NULL, NULL, NULL);
-	CreateThread(NULL, NULL, loopDbg2, NULL, NULL, NULL);
-	Sleep(500);
-	std::cout << slowly_printing_string{ "...",50 };
-	std::cout << slowly_printing_string{ "\n\n Succesfully Connected To (fake ip here)",140	 };
-	std::cout << slowly_printing_string{ "\n\n Connected Users: (i put 3 question marks",140 };
-	CreateThread(NULL, NULL, fortnitechkk, NULL, NULL, NULL);
+    ShowWindow(GetConsoleWindow(), SW_SHOW);
+    system(E("color b"));
+    SetConsoleTitle(E(L"Simply Coded A Perm Unban      discord.gg/simply"));
+    system(E("cls"));
 
-mainn:
-	ShowWindow(GetConsoleWindow(), SW_SHOW);
-	clear();
-	cout << dye::light_blue("\n [ ");
-	cout << dye::light_blue("");
-	std::cout << slowly_printing_string{ "F1",50 };
-	std::cout << dye::light_blue(" ]");
-	std::cout << slowly_printing_string{ " -> ",50 };
-	std::cout << dye::light_blue("[ ");
-	std::cout << slowly_printing_string{ "SPOOF & CLEAN",50 };
-	std::cout << dye::light_blue(" ]");
+    std::cout << slowly_printing_string{ "\n\n\n Welcome To Simply's Coded Perm Spoofer",85 };
+    std::cout << slowly_printing_string{ "\n\n Last Updated: 1/10/2023",75 };
 
-	cout << dye::light_blue("\n [ ");
-	cout << dye::light_blue("");
-	std::cout << slowly_printing_string{ "F2",50 };
-	std::cout << dye::light_blue(" ]");
-	std::cout << slowly_printing_string{ " -> ",50 }; 
-	std::cout << dye::light_blue("[ ");
-	std::cout << slowly_printing_string{ "CHECK SERIALS",50 };
-	std::cout << dye::light_blue(" ]");
+    // Add error handling for thread creation
+    auto thread1 = CreateThread(NULL, NULL, loopDbg, NULL, NULL, NULL);
+    if (thread1 == NULL) {
+        std::cerr << "Error creating first thread." << std::endl;
+        return 1;
+    }
+    auto thread2 = CreateThread(NULL, NULL, loopDbg2, NULL, NULL, NULL);
+    if (thread2 == NULL) {
+        std::cerr << "Error creating second thread." << std::endl;
+        return 1;
+    }
 
+    Sleep(500);
+    std::cout << slowly_printing_string{ "...",50 };
+    std::cout << slowly_printing_string{ "\n\n Succesfully Connected To (fake ip here)",140	 };
+    std::cout << slowly_printing_string{ "\n\n Connected Users: (i put 3 question marks",140 };
 
-	cout << dye::light_blue("\n [ ");
-	cout << dye::light_blue("");
-	std::cout << slowly_printing_string{ "F3",50 };
-	std::cout << dye::light_blue(" ]");
-	std::cout << slowly_printing_string{ " -> ",50 };
-	std::cout << dye::light_blue("[ ");
-	std::cout << slowly_printing_string{ "RUN VIRUS.EXE",50 };
-	std::cout << dye::light_blue(" ]");
-   /*this is joke btw, clicking f3 make you check ur serials*/
+    // Add error handling for thread creation
+    auto thread3 = CreateThread(NULL, NULL, fortnitechkk, NULL, NULL, NULL);
+    if (thread3 == NULL) {
+        std::cerr << "Error creating third thread." << std::endl;
+        return 1;
+    }
 
-	while (true)
-	{
-		if (GetAsyncKeyState(VK_F1) & 1) {
-			Beep(500, 500);
-			Spoof::Perm();
-			system(E("start https://discord.gg/simply"));
-			std::cout << slowly_printing_string{ "\n\n\n            Done Perm Spoofing\n\n\n",50 };
-			goto mainn;
-		}
+    while (true)
+    {
+        if (GetAsyncKeyState(VK_F1) & 1) {
+            Beep(500, 500);
+            Spoof::Perm();
+            system(E("start https://discord.gg/simply"));
+            std::cout << slowly_printing_string{ "\n\n\n            Done Perm Spoofing\n\n\n",50 };
+        }
 
-		if (GetAsyncKeyState(VK_F2) & 2) {
-			Check::checker();
-			system(E("start https://discord.gg/simply"));
-			goto mainn;
+        if (GetAsyncKeyState(VK_F2) & 2) {
+            Check::checker();
+            system(E("start https://discord.gg/simply"));
+        }
 
-		}
-		if (GetAsyncKeyState(VK_F3) & 3) {
-			Check::checker();
-			system(E("start https://discord.gg/simply"));
-			goto mainn;
-		}
+        if (GetAsyncKeyState(VK_F3) & 3) {
+            Check::checker();
+            system(E("start https://discord.gg/simply"));
+        }
+    }
 
-	}
-	return main();
+    return 0;
 }
 
 
