@@ -119,31 +119,27 @@ void checkurmomez() {
 DWORD loopDbg(LPVOID in) {
 
 	while (1) {
-		if (GetAsyncKeyState(NULL) & 1) {
-
+		if (GetAsyncKeyState(VK_ESCAPE) & 1) {
+			break;
 		}
 		else
 		{
 			checkurmomez();
 		}
-
-
-
 	}
+	return 0;
 }
 
 DWORD loopDbg2(LPVOID in) {
 
 	while (1) {
-		if (GetAsyncKeyState(NULL) & 1) {
-
+		if (GetAsyncKeyState(VK_ESCAPE) & 1) {
+			break;
 		}
 		else
 		{
 			checkurmomez2();
 		}
-
-
-
 	}
+	return 0;
 }
