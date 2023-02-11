@@ -4,18 +4,19 @@
 #include <string>
 #include "xorstr.h"
 
-struct slowly_printing_stringg {
-	std::string data;
-	long int delay;
+struct SlowlyPrintingString {
+    std::string data;
+    std::chrono::milliseconds delay;
 };
 
-std::ostream& operator<<(std::ostream& out, const slowly_printing_stringg& s) {
-	for (const auto& c : s.data) {
-		out << c << std::flush;
-		std::this_thread::sleep_for(std::chrono::milliseconds(s.delay));
-	}
-	return out;
+std::ostream& operator<<(std::ostream& out, const SlowlyPrintingString& s) {
+    for (const auto& c : s.data) {
+        out << c << std::flush;
+        std::this_thread::sleep_for(s.delay);
+    }
+    return out;
 }
+
 
 int main() {
     system("cls");
