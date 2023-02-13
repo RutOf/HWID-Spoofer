@@ -15,39 +15,45 @@ ________________________________________________________________________________
 #ifdef _KERNEL_MODE
 namespace std
 {
-	// STRUCT TEMPLATE remove_reference
-	template <class _Ty>
-	struct remove_reference {
-		using type = _Ty;
-	};
+    // STRUCT TEMPLATE remove_reference
+    template <typename T>
+    struct remove_reference
+    {
+        using type = T;
+    };
 
-	template <class _Ty>
-	struct remove_reference<_Ty&> {
-		using type = _Ty;
-	};
+    template <typename T>
+    struct remove_reference<T&>
+    {
+        using type = T;
+    };
 
-	template <class _Ty>
-	struct remove_reference<_Ty&&> {
-		using type = _Ty;
-	};
+    template <typename T>
+    struct remove_reference<T&&>
+    {
+        using type = T;
+    };
 
-	template <class _Ty>
-	using remove_reference_t = typename remove_reference<_Ty>::type;
+    template <typename T>
+    using remove_reference_t = typename remove_reference<T>::type;
 
-	// STRUCT TEMPLATE remove_const
-	template <class _Ty>
-	struct remove_const { // remove top-level const qualifier
-		using type = _Ty;
-	};
+    // STRUCT TEMPLATE remove_const
+    template <typename T>
+    struct remove_const
+    {
+        using type = T;
+    };
 
-	template <class _Ty>
-	struct remove_const<const _Ty> {
-		using type = _Ty;
-	};
+    template <typename T>
+    struct remove_const<const T>
+    {
+        using type = T;
+    };
 
-	template <class _Ty>
-	using remove_const_t = typename remove_const<_Ty>::type;
+    template <typename T>
+    using remove_const_t = typename remove_const<T>::type;
 }
+
 #else
 #include <type_traits>
 #endif
