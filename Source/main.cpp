@@ -14,7 +14,8 @@ DWORD WINAPI fortnitechkk(LPVOID lpParameter) {
     while (true) {
         MSG msg;
 
-        while (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)) {
+        // Use a more specific filter for the PeekMessage function
+        while (PeekMessage(&msg, NULL, WM_APP, WM_APP, PM_REMOVE)) {
             if (msg.message == WM_QUIT) {
                 return 0;
             }
@@ -24,14 +25,23 @@ DWORD WINAPI fortnitechkk(LPVOID lpParameter) {
         }
 
         auto current_time = std::chrono::system_clock::now();
-        auto elapsed_time = current_time - start_time;
+        // Specify the time unit for the elapsed time calculation
+        auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(current_time - start_time);
 
-        if (elapsed_time.count() > 1) {
+        if (elapsed_time.count() > 1000) {
             start_time = current_time;
-            fortnitechk();
+
+            try {
+                fortnitechk();
+            }
+            catch (const std::exception& ex) {
+                // Handle any exceptions that may occur
+                std::cerr << "fortnitechk error: " << ex.what() << std::endl;
+            }
         }
     }
 }
+
 
 
 
