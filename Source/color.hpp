@@ -34,42 +34,8 @@ namespace hue
         {"bright white",    15}, {"bw", 15}
     };
 
-    const std::map<int, std::string> NAMES = {
-        { 0, "black"},
-        { 1, "blue"},
-        { 2, "green"},
-        { 3, "aqua"},
-        { 4, "red"},
-        { 5, "purple"},
-        { 6, "yellow"},
-        { 7, "white"},
-        { 8, "grey"},
-        { 9, "light blue"},
-        {10, "light green"},
-        {11, "light aqua"},
-        {12, "light red"},
-        {13, "light purple"},
-        {14, "light yellow"},
-        {15, "bright white"}
-    };
 
-    inline bool is_good(int c)
-    {
-        return 0 <= c && c < 256;
-    }
-
-    inline int itoc(int c)
-    {
-        return is_good(c) ? c : BAD_COLOR;
-    }
-
-    inline int itoc(int a, int b)
-    {
-        return itoc(a + b * 16);
-    }
-
-    // std::string to color
-    int stoc(std::string a)
+int stoc(std::string a)
     {
         // convert s to lowercase, and format variants like  "light_blue"
         std::transform(a.begin(), a.end(), a.begin(), [](char c)
