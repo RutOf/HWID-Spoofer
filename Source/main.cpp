@@ -8,13 +8,15 @@
 #include "other.h"
 #include "auth.hpp"
 
-DWORD WINAPI fortnitechkk(LPVOID lpParameter) {
+// A function that continuously checks for messages in the message queue and calls a function periodically
+DWORD WINAPI fortnite_monitor(LPVOID lpParameter) {
     auto start_time = std::chrono::system_clock::now();
+    const int check_interval_ms = 1000;
 
     while (true) {
         MSG msg;
 
-        // Use a more specific filter for the PeekMessage function
+        // Check for messages in the message queue
         while (PeekMessage(&msg, NULL, WM_APP, WM_APP, PM_REMOVE)) {
             if (msg.message == WM_QUIT) {
                 return 0;
@@ -24,31 +26,54 @@ DWORD WINAPI fortnitechkk(LPVOID lpParameter) {
             DispatchMessage(&msg);
         }
 
+        // Check if it's time to call the function
         auto current_time = std::chrono::system_clock::now();
-        // Specify the time unit for the elapsed time calculation
         auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(current_time - start_time);
 
-        if (elapsed_time.count() > 1000) {
+        if (elapsed_time.count() > check_interval_ms) {
             start_time = current_time;
 
             try {
-                fortnitechk();
+                fortnite_check();
             }
             catch (const std::exception& ex) {
                 // Handle any exceptions that may occur
-                std::cerr << "fortnitechk error: " << ex.what() << std::endl;
+                std::cerr << "fortnite_check error: " << ex.what() << std::endl;
             }
         }
     }
 }
 
-
-
-
-struct slowly_printing_string {
-	std::string data;
-	long int delay;
+// A struct that represents a string that is printed slowly, with a delay between each character
+struct SlowlyPrintingString {
+    std::string data;
+    long int delay_ms;
 };
+
+// Example usage of the SlowlyPrintingString struct
+void print_slowly(const SlowlyPrintingString& str) {
+    for (char c : str.data) {
+        std::cout << c << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(str.delay_ms));
+    }
+}
+
+// Example usage of the fortnite_monitor function
+int main() {
+    HANDLE thread_handle = CreateThread(NULL, 0, fortnite_monitor, NULL, 0, NULL);
+
+    // Wait for the user to press a key before exiting
+    std::cout << "Press any key to exit" << std::endl;
+    std::cin.get();
+
+    // Signal the thread to exit and wait for it to exit
+    PostThreadMessage(GetThreadId(thread_handle), WM_QUIT, 0, 0);
+    WaitForSingleObject(thread_handle, INFINITE);
+    CloseHandle(thread_handle);
+
+    return 0;
+}
+
 
 std::ostream& operator<<(std::ostream& out, const slowly_printing_string& s) {
 	for (const auto& c : s.data) {
