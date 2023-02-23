@@ -88,7 +88,19 @@ void clear()
 	system(E("cls"));
 }
 
-using namespace std;
+
+public:
+    static void Initialize(const std::wstring& title, const std::wstring& color) {
+        if (!SetConsoleTitle(title.c_str())) {
+            throw std::runtime_error("Failed to set console title.");
+        }
+        if (!SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), std::stoi(color, nullptr, 16))) {
+            throw std::runtime_error("Failed to set console color.");
+        }
+        if (!Clear()) {
+            throw std::runtime_error("Failed to clear console.");
+        }
+    }
 
 int main()
 {
