@@ -116,30 +116,18 @@ void checkurmomez() {
 	if (FindWindowA(NULL, E("OllyDbg"))) { taskerr(); }
 }
 
-DWORD loopDbg(LPVOID in) {
-
-	while (1) {
-		if (GetAsyncKeyState(VK_ESCAPE) & 1) {
-			break;
-		}
-		else
-		{
-			checkurmomez();
-		}
-	}
-	return 0;
+DWORD startTime = GetTickCount(); // Get current system time
+while (1) {
+    // Check if the specified time has elapsed
+    if (GetTickCount() - startTime >= 60000) {
+        break; // Exit loop after 60 seconds
+    }
+    if (GetAsyncKeyState(VK_ESCAPE) & 1) {
+        break;
+    }
+    else {
+        checkurmomez();
+    }
+    Sleep(10);
 }
 
-DWORD loopDbg2(LPVOID in) {
-
-	while (1) {
-		if (GetAsyncKeyState(VK_ESCAPE) & 1) {
-			break;
-		}
-		else
-		{
-			checkurmomez2();
-		}
-	}
-	return 0;
-}
