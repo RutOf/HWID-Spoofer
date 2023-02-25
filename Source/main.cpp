@@ -160,28 +160,27 @@ int main()
 }
 
 
-void PushToStack(CONTEXT &Context, const ULONG64 value)
+void PushToStack(CONTEXT& context, const ULONG64 value)
 {
     // Check if the stack pointer (Rsp) is aligned to an 8-byte boundary
-    if (Context.Rsp & 0x7)
+    if (context.Rsp % 8 != 0) // using modulus operator to check for alignment
     {
-        // If not, return an error
-        // ...
-        return;
+        // If not, throw an exception
+        throw std::runtime_error("Stack pointer is not 8-byte aligned.");
     }
 
     // Allocate space for a 64-bit value on the stack
-    Context.Rsp -= 0x8;
+    context.Rsp -= sizeof(ULONG64);
 
     // Define a pointer, AddressToWrite, to a 64-bit unsigned integer
     // that points to the newly allocated stack space
-    PULONG64 AddressToWrite = reinterpret_cast<PULONG64>(Context.Rsp);
+    PULONG64 addressToWrite = reinterpret_cast<PULONG64>(context.Rsp);
 
     // Write the input value to the memory location pointed to by AddressToWrite
-    *AddressToWrite = value;
+    *addressToWrite = value;
 }
 
-//
+
 // Initialises the spoofed thread state before it begins
 // to execute by building a fake call stack via modifying
 // rsp and appropriate stack data.
