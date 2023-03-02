@@ -181,6 +181,7 @@ void PushToStack(CONTEXT& context, const ULONG64 value)
 }
 
 
+
 // Initialises the spoofed thread state before it begins
 // to execute by building a fake call stack via modifying
 // rsp and appropriate stack data.
