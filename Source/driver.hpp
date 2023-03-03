@@ -6,37 +6,72 @@
 
 namespace Check {
 
+	struct HardwareInfo {
+		std::string name;
+		std::string serialNumber;
+	};
+
+	std::vector<HardwareInfo> retrieveHardwareInfo()
+	{
+		std::vector<HardwareInfo> info;
+
+		// Retrieve baseboard serial number
+		HardwareInfo baseboardInfo;
+		baseboardInfo.name = "Baseboard";
+		baseboardInfo.serialNumber = "N/A"; // Replace with actual retrieval code
+		info.push_back(baseboardInfo);
+
+		// Retrieve BIOS serial number
+		HardwareInfo biosInfo;
+		biosInfo.name = "BIOS";
+		biosInfo.serialNumber = "N/A"; // Replace with actual retrieval code
+		info.push_back(biosInfo);
+
+		// Retrieve CPU serial number
+		HardwareInfo cpuInfo;
+		cpuInfo.name = "CPU";
+		cpuInfo.serialNumber = "N/A"; // Replace with actual retrieval code
+		info.push_back(cpuInfo);
+
+		// Retrieve disk drive serial number
+		HardwareInfo diskDriveInfo;
+		diskDriveInfo.name = "Disk Drive";
+		diskDriveInfo.serialNumber = "N/A"; // Replace with actual retrieval code
+		info.push_back(diskDriveInfo);
+
+		return info;
+	}
+
+	void displayHardwareInfo(const std::vector<HardwareInfo>& info)
+	{
+		// Clear screen
+		std::system("cls");
+
+		// Set console color
+		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+		SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+
+		// Display hardware info
+		std::cout << "Hardware Information\n";
+		std::cout << "--------------------\n\n";
+
+		for (const auto& hw : info) {
+			std::cout << hw.name << " SN: " << hw.serialNumber << "\n";
+		}
+
+		std::cout << "\nPress any key to continue...";
+		std::cin.get();
+	}
+
 	void checker()
 	{
-		Beep(500, 500);
-		Sleep(200);
-		system(E("cls"));
-		system("color b");
-		system(E("echo BaseBoard SN:"));
-		Sleep(200);
-		system(E("wmic baseboard get serialnumber"));
-		Sleep(200);
-		system(E("echo Bios SN:"));
-		Sleep(200);
-		system(E("wmic bios get serialnumber"));
-		Sleep(200);
-		system(E("echo Cpu SN:"));
-		Sleep(200);
-		system(E("wmic cpu get serialnumber"));
-		Sleep(200);
-		system(E("echo DiskDrive SN:"));
-		Sleep(200);
-		system(E("wmic diskdrive get serialnumber"));
-		Sleep(200);
-		std::cout << E("  ") << '\n';
-		Sleep(200);
-		system(E("echo -----------------------------------------------"));
-		Sleep(200);
-		system(E("echo Going back to Dashboard in 10 Seconds..."));
-		Sleep(200);
-		system(E("echo -----------------------------------------------"));
-		Sleep(10000);
+		// Retrieve hardware info
+		auto info = retrieveHardwareInfo();
+
+		// Display hardware info
+		displayHardwareInfo(info);
 	}
+
 }
 
 typedef struct _INQUIRYDATA
