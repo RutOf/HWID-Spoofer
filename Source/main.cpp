@@ -83,24 +83,35 @@ std::ostream& operator<<(std::ostream& out, const slowly_printing_string& s) {
 	return out;
 }
 
-void clear()
-{
-	system(E("cls"));
+// Clear the console screen.
+void clear() {
+    system("cls");
 }
 
-
-public:
-    static void Initialize(const std::wstring& title, const std::wstring& color) {
-        if (!SetConsoleTitle(title.c_str())) {
-            throw std::runtime_error("Failed to set console title.");
-        }
-        if (!SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), std::stoi(color, nullptr, 16))) {
-            throw std::runtime_error("Failed to set console color.");
-        }
-        if (!Clear()) {
-            throw std::runtime_error("Failed to clear console.");
-        }
+// Initialize the console with the given title and color.
+void Initialize(const std::wstring& title, const std::wstring& color) {
+    // Set the console title.
+    if (!SetConsoleTitle(title.c_str())) {
+        throw std::runtime_error("Failed to set console title.");
     }
+
+    // Convert the color string to integer.
+    int colorInt = std::stoi(color, nullptr, 16);
+
+    // Check if the color is valid.
+    if (colorInt < 0 || colorInt > 0xFFFF) {
+        throw std::invalid_argument("Invalid color.");
+    }
+
+    // Set the console text color.
+    if (!SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), colorInt)) {
+        throw std::runtime_error("Failed to set console color.");
+    }
+
+    // Clear the console screen.
+    clear();
+}
+
 
 int main()
 {
