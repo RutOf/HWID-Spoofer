@@ -118,8 +118,36 @@ private:
 };
 
 
+class Api {
+public:
+    // Constructor and other methods here
+    
+    void registerUser(const std::string& username,
+                      const std::string& password,
+                      const std::string& key);
+                      
+    const ApiData& getData() const;
+
+private:
+    ApiData data_;
+};
+
 void Api::registerUser(const std::string& username,
                        const std::string& password,
-                       const std::string& key) const {}
+                       const std::string& key) {
+    // Validate input parameters
+    if (username.empty() || password.empty() || key.empty()) {
+        throw std::invalid_argument("Invalid input parameters");
+    }
+    
+    // Hash the password for security
+    std::string hashed_password = hash(password);
+    
+    // TODO: Implement authentication and authorization mechanisms
+    
+    // TODO: Add new user to the data store
+}
 
-const ApiData& Api::getData() const { return data_; }
+const ApiData& Api::getData() const {
+    return data_;
+}
