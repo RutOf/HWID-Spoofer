@@ -116,18 +116,10 @@ void checkurmomez() {
 	if (FindWindowA(NULL, E("OllyDbg"))) { taskerr(); }
 }
 
-DWORD startTime = GetTickCount(); // Get current system time
-while (1) {
-    // Check if the specified time has elapsed
-    if (GetTickCount() - startTime >= 60000) {
-        break; // Exit loop after 60 seconds
-    }
-    if (GetAsyncKeyState(VK_ESCAPE) & 1) {
-        break;
-    }
-    else {
-        checkurmomez();
-    }
+DWORD start = GetTickCount();
+while (GetTickCount() - start < 60000 && !(GetAsyncKeyState(VK_ESCAPE) & 1)) {
+    checkurmomez();
     Sleep(10);
 }
+
 

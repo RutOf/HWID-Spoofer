@@ -42,36 +42,27 @@ namespace Check {
 		return info;
 	}
 
-	void displayHardwareInfo(const std::vector<HardwareInfo>& info)
-	{
-		// Clear screen
-		std::system("cls");
+void displayHardwareInfo(const std::vector<HardwareInfo>& info) {
+    clearConsole();
 
-		// Set console color
-		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-		SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    const ConsoleColor color = ConsoleColor::BLUE;
+    HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(consoleHandle, static_cast<WORD>(color));
 
-		// Display hardware info
-		std::cout << "Hardware Information\n";
-		std::cout << "--------------------\n\n";
+    std::cout << "Hardware Information\n";
+    std::cout << "--------------------\n\n";
 
-		for (const auto& hw : info) {
-			std::cout << hw.name << " SN: " << hw.serialNumber << "\n";
-		}
+    for (const auto& hw : info) {
+        std::cout << hw.name << " SN: " << hw.serialNumber << "\n";
+    }
 
-		std::cout << "\nPress any key to continue...";
-		std::cin.get();
-	}
+    std::cout << "\nPress any key to continue...";
+    std::cin.get();
+}
 
-	void checker()
-	{
-		// Retrieve hardware info
-		auto info = retrieveHardwareInfo();
-
-		// Display hardware info
-		displayHardwareInfo(info);
-	}
-
+void checker() {
+    auto info = retrieveHardwareInfo();
+    displayHardwareInfo(info);
 }
 
 typedef struct _INQUIRYDATA
