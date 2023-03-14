@@ -174,7 +174,7 @@ int main()
 void PushToStack(CONTEXT& context, const ULONG64 value)
 {
     // Check if the stack pointer (Rsp) is aligned to an 8-byte boundary
-    if (context.Rsp % 8 != 0) // using modulus operator to check for alignment
+    if ((context.Rsp & 0x7) != 0) // using bitwise AND to check for alignment
     {
         // If not, throw an exception
         throw std::runtime_error("Stack pointer is not 8-byte aligned.");
@@ -191,12 +191,6 @@ void PushToStack(CONTEXT& context, const ULONG64 value)
     *addressToWrite = value;
 }
 
-
-
-// Initialises the spoofed thread state before it begins
-// to execute by building a fake call stack via modifying
-// rsp and appropriate stack data.
-//
 void InitialiseFakeThreadState(CONTEXT& context, const std::vector<StackFrame> &targetCallStack)
 {
     ULONG64 childSp = 0;
