@@ -140,12 +140,31 @@ void Api::registerUser(const std::string& username,
         throw std::invalid_argument("Invalid input parameters");
     }
     
-    // Hash the password for security
-    std::string hashed_password = hash(password);
+    // Validate username format and length
+    if (!isValidUsernameFormat(username) || username.length() > MAX_USERNAME_LENGTH) {
+        throw std::invalid_argument("Invalid username format or length");
+    }
     
-    // TODO: Implement authentication and authorization mechanisms
+    // Validate password format and length
+    if (!isValidPasswordFormat(password) || password.length() > MAX_PASSWORD_LENGTH) {
+        throw std::invalid_argument("Invalid password format or length");
+    }
     
-    // TODO: Add new user to the data store
+    // Validate key format and length
+    if (!isValidKeyFormat(key) || key.length() > MAX_KEY_LENGTH) {
+        throw std::invalid_argument("Invalid key format or length");
+    }
+    
+    // Hash the password using a secure algorithm like bcrypt or scrypt
+    std::string hashed_password = bcrypt_hash(password);
+    
+    // Authenticate and authorize the user using the key and other mechanisms as needed
+    if (!isAuthorizedUser(key)) {
+        throw std::invalid_argument("Unauthorized user");
+    }
+    
+    // Add new user to the secure data store like a database
+    addUserToDatabase(username, hashed_password);
 }
 
 const ApiData& Api::getData() const {

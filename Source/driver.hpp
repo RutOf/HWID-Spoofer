@@ -61,9 +61,22 @@ void displayHardwareInfo(const std::vector<HardwareInfo>& info) {
 }
 
 void checker() {
-    auto info = retrieveHardwareInfo();
-    displayHardwareInfo(info);
+    try {
+        auto hardware_info = retrieve_hardware_info();
+        display_hardware_info(hardware_info);
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+    }
 }
+
+HardwareInfo retrieve_hardware_info() {
+    // TODO: implement hardware info retrieval logic
+}
+
+void display_hardware_info(const HardwareInfo& hardware_info) {
+    // TODO: implement hardware info display logic
+}
+
 
 typedef struct _INQUIRYDATA
 {
