@@ -73,11 +73,6 @@ HardwareInfo retrieve_hardware_info() {
     // TODO: implement hardware info retrieval logic
 }
 
-void display_hardware_info(const HardwareInfo& hardware_info) {
-    // TODO: implement hardware info display logic
-}
-
-
 typedef struct _INQUIRYDATA
 {
 	union
