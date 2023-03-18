@@ -43,21 +43,12 @@ namespace Check {
 	}
 
 void displayHardwareInfo(const std::vector<HardwareInfo>& info) {
-    clearConsole();
-
-    const ConsoleColor color = ConsoleColor::BLUE;
-    HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(consoleHandle, static_cast<WORD>(color));
-
-    std::cout << "Hardware Information\n";
-    std::cout << "--------------------\n\n";
-
-    for (const auto& hw : info) {
+    system("cls");
+    std::cout << "\033[34mHardware Information\n--------------------\n";
+    for (const auto& hw : info)
         std::cout << hw.name << " SN: " << hw.serialNumber << "\n";
-    }
-
     std::cout << "\nPress any key to continue...";
-    std::cin.get();
+    std::cin.ignore();
 }
 
 void checker() {
