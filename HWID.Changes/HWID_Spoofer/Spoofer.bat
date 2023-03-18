@@ -1,4 +1,10 @@
 @echo off
+@echo
+@echo
+@echo
+@echo
+@echo
+@echo
 title Batch Spoofer 1.1.0 - Developed By TUX
 	cls
 
@@ -659,7 +665,7 @@ title Batch Spoofer 1.1.0 - Developed By TUX
 		
 		)
 
-	goto :eof
+goto :eof
 	
 
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography" /v MachineGuid /t REG_SZ /d %Hex8%-%Hex1%-%Hex0%-%Hex1%-%Hex10% /f>nul 2>&1
