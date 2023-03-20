@@ -173,128 +173,57 @@ int main()
 
 void PushToStack(CONTEXT& context, const ULONG64 value)
 {
-    // Check if the stack pointer (Rsp) is aligned to an 8-byte boundary
-    if ((context.Rsp & 0x7) != 0) // using bitwise AND to check for alignment
-    {
-        // If not, throw an exception
+    if ((context.Rsp & 0x7) != 0)
         throw std::runtime_error("Stack pointer is not 8-byte aligned.");
-    }
 
-    // Allocate space for a 64-bit value on the stack
-    context.Rsp -= sizeof(ULONG64);
-
-    // Define a pointer, AddressToWrite, to a 64-bit unsigned integer
-    // that points to the newly allocated stack space
-    PULONG64 addressToWrite = reinterpret_cast<PULONG64>(context.Rsp);
-
-    // Write the input value to the memory location pointed to by AddressToWrite
-    *addressToWrite = value;
+    *(reinterpret_cast<PULONG64>(context.Rsp -= sizeof(ULONG64))) = value;
 }
 
-void InitialiseFakeThreadState(CONTEXT& context, const std::vector<StackFrame> &targetCallStack)
+void InitialiseFakeThreadState(CONTEXT& context, const std::vector<StackFrame>& targetCallStack)
 {
     ULONG64 childSp = 0;
-    BOOL bPreviousFrameSetUWOP_SET_FPREG = false;
+    bool prevFrameSetUWOP_SET_FPREG = false;
 
-    // [1] As an extra sanity check explicitly clear
-    // the last RET address to stop any further unwinding.
+    // Clear last RET address to stop further unwinding.
     PushToStack(context, 0);
 
-    // [2] Loop through target call stack *backwards*
-    // and modify the stack so it resembles the fake
-    // call stack e.g. essentially making the top of
-    // the fake stack look like the diagram below:
-    //      |                |
-    //       ----------------
-    //      |  RET ADDRESS   |
-    //       ----------------
-    //      |                |
-    //      |     Unwind     |
-    //      |     Stack      |
-    //      |      Size      |
-    //      |                |
-    //       ----------------
-    //      |  RET ADDRESS   |
-    //       ----------------
-    //      |                |
-    //      |     Unwind     |
-    //      |     Stack      |
-    //      |      Size      |
-    //      |                |
-    //       ----------------
-    //      |   RET ADDRESS  |
-    //       ----------------   <--- RSP when NtOpenProcess is called
-    //
-    for (auto stackFrame = targetCallStack.rbegin(); stackFrame != targetCallStack.rend(); ++stackFrame)
+    for (const auto& stackFrame : targetCallStack)
     {
-        // [2.1] Check if the last frame set UWOP_SET_FPREG.
-        // If the previous frame uses the UWOP_SET_FPREG
-        // op, it will reset the stack pointer to rbp.
-        // Therefore, we need to find the next function in
-        // the chain which pushes rbp and make sure it writes
-        // the correct value to the stack so it is propagated
-        // to the frame after that needs it (otherwise stackwalk
-        // will fail). The required value is the childSP
-        // of the function that used UWOP_SET_FPREG (i.e. the
-        // value of RSP after it is done adjusting the stack and
-        // before it pushes its RET address).
-        if (bPreviousFrameSetUWOP_SET_FPREG && stackFrame->pushRbp)
+        if (prevFrameSetUWOP_SET_FPREG && stackFrame.pushRbp)
         {
-            // [2.2] Check when RBP was pushed to the stack in function
-            // prologue. UWOP_PUSH_NONVOls will always be last:
-            // "Because of the constraints on epilogs, UWOP_PUSH_NONVOL
-            // unwind codes must appear first in the prolog and
-            // correspondingly, last in the unwind code array."
-            // Hence, subtract the push rbp code index from the
-            // total count to work out when it is pushed onto stack.
-            // E.g. diff will be 1 below, so rsp -= 0x8 then write childSP:
-            // RPCRT4!LrpcIoComplete:
-            // 00007ffd`b342b480 4053            push    rbx
-            // 00007ffd`b342b482 55              push    rbp
-            // 00007ffd`b342b483 56              push    rsi
-            // If diff == 0, rbp is pushed first etc.
-            auto diff = stackFrame->countOfCodes - stackFrame->pushRbpIndex;
-            auto tmpStackSizeCounter = 0;
-            for (ULONG i = 0; i < diff; i++)
+            // Find when RBP was pushed to the stack in function prologue.
+            ULONG diff = stackFrame.countOfCodes - stackFrame.pushRbpIndex;
+            ULONG64 tmpStackSizeCounter = 0;
+
+            // Push any other non-volatile registers before RBP.
+            for (ULONG i = 0; i < diff; ++i)
             {
-                // e.g. push rbx
-                PushToStack(context, 0x0);
+                PushToStack(context, 0);
                 tmpStackSizeCounter += 0x8;
             }
-            // push rbp
+
+            // Push the correct RBP value.
             PushToStack(context, childSp);
 
-            // [2.3] Minus off the remaining function stack size
-            // and continue unwinding.
-            context.Rsp -= (stackFrame->totalStackSize - (tmpStackSizeCounter + 0x8));
-            PULONG64 fakeRetAddress = (PULONG64)(context.Rsp);
-            *fakeRetAddress = (ULONG64)stackFrame->returnAddress;
+            // Minus the remaining stack size and continue unwinding.
+            context.Rsp -= (stackFrame.totalStackSize - (tmpStackSizeCounter + 0x8));
+            *reinterpret_cast<PULONG64>(context.Rsp) = stackFrame.returnAddress;
 
-            // [2.4] From my testing it seems you only need to get rbp
-            // right for the next available frame in the chain which pushes it.
-            // Hence, there can be a frame in between which does not push rbp.
-            // Ergo set this to false once you have resolved rbp for frame
-            // which needed it. This is pretty flimsy though so this assumption
-            // may break for other more complicated examples.
-            bPreviousFrameSetUWOP_SET_FPREG = false;
+            // Done resolving RBP for previous frame, set to false.
+            prevFrameSetUWOP_SET_FPREG = false;
         }
         else
         {
-            // [3] If normal frame, decrement total stack size
-            // and write RET address.
-            context.Rsp -= stackFrame->totalStackSize;
-            PULONG64 fakeRetAddress = (PULONG64)(context.Rsp);
-            *fakeRetAddress = (ULONG64)stackFrame->returnAddress;
+            // Decrement stack size and write RET address.
+            context.Rsp -= stackFrame.totalStackSize;
+            *reinterpret_cast<PULONG64>(context.Rsp) = stackFrame.returnAddress;
         }
 
-        // [4] Check if the current function sets frame pointer
-        // when unwinding e.g. mov rsp,rbp / UWOP_SET_FPREG
-        // and record its childSP.
-        if (stackFrame->setsFramePointer)
+        // Check if current function sets frame pointer when unwinding.
+        if (stackFrame.setsFramePointer)
         {
-            childSp = context.Rsp;
-            childSp += 0x8;
-            bPreviousFrameSetUWOP_SET_FPREG = true;
+            childSp = context.Rsp + 0x8;
+            prevFrameSetUWOP_SET_FPREG = true;
         }
     }
 }
